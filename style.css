@@ -1,8 +1,14 @@
+/* El margen para todo el cuerpo es de 0 */
+body {
+    margin: 0em;
+}
+
+
 .header {
     background-image: url("Images/Logos/img-portada-fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    m
+    
 }
 
 .portada {
@@ -26,7 +32,11 @@
     color:#D5B6A3;
     padding-top: 0%;
     margin: 0%;
+}
 
+#subtitulo {
+    margin-top: 0em;
+    font-size: 90px;
 }
 
 .films {
@@ -46,6 +56,6 @@
 
 /* Revisar */
 @font-face {
-    font-family: ;
-    src: url ();
+    font-family: Arapey ;
+    src: url()
 }
