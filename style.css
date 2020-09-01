@@ -1,0 +1,51 @@
+.header {
+    background-image: url("Images/Logos/img-portada-fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    m
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:10px;
+}
+
+.botongeneros {
+    text-align: right;
+    color: #A6A292;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: ;
+}
+
+.title {
+    display: grid;
+    align-items: center;
+    place-items: center;
+    color:#D5B6A3;
+    padding-top: 0%;
+    margin: 0%;
+
+}
+
+.films {
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+}
+
+.series {
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+}
+
+.palabra {
+    color:#D5B6A3;
+}
+
+
+/* Revisar */
+@font-face {
+    font-family: ;
+    src: url ();
+}
