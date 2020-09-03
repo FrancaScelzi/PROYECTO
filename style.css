@@ -1,4 +1,5 @@
 /* El margen para todo el cuerpo es de 0 */
+
 body {
     margin: 0em;
 }
@@ -41,18 +42,23 @@ body {
 
 .films {
     display: grid;
-    grid-template-columns: repeat(4,1fr)
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
 }
 
 .series {
     display: grid;
-    grid-template-columns: repeat(4,1fr)
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
 }
 
 .palabra {
     color:#D5B6A3;
 }
 
+.footer {
+
+}
 
 /* Revisar */
 @font-face {
