@@ -23,7 +23,7 @@ body {
     color: #A6A292;
     font-size: 30px;
     text-decoration: none;
-    font-family: ;
+    font-family: 'Arapey', serif;
 }
 
 .title {
@@ -38,7 +38,9 @@ body {
 #subtitulo {
     margin-top: 0em;
     font-size: 90px;
+    font-family: 'Arapey', serif;
 }
+
 
 .films {
     display: grid;
@@ -54,14 +56,12 @@ body {
 
 .palabra {
     color:#D5B6A3;
+    font-family: 'Arapey', serif;
 }
 
 .footer {
 
 }
 
-/* Revisar */
-@font-face {
-    font-family: Arapey ;
-    src: url()
-}
+
+
