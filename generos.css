@@ -1,1 +1,64 @@
 /* Sitio de géneros */
+
+hr { 
+    margin: 0px;
+}
+
+.footer { 
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    background-color: black;
+    margin-top: auto ;
+    height: 120px;
+    width: 100%;
+    
+}
+ 
+.terminos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    padding: 0px
+    
+}
+/* REVISAR */
+.miniterminos {
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: solid 1px grey; 
+    align-content: center;
+    margin: 0px;
+   
+}
+
+.miniterminosprivacidad { 
+     border-right: none;
+     margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-content: center;
+    margin: 0px;
+
+}
+
+
+
+#copyright {
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-family: 'Arapey', serif;
+            align-content: center;
+            margin-top: 20px;
+        
+
+}
