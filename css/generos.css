@@ -1,5 +1,30 @@
 /* Sitio de géneros */
+body{
+    background-color: black;
+}
 
+/* header */
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:10px;
+}
+
+.titulo{
+    color: white;
+}
+
+.eye{
+    text-align: right;
+}
+
+
+
+
+
+
+
+/* footer */
 hr { 
     margin: 0px;
 }
