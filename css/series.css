@@ -1,5 +1,17 @@
 /* Detalle de las Series */
 
+/*Header*/
+
+.eye {
+    margin: 10px;
+    margin-left: 5px;
+}
+
+/*Body*/
+body {
+    background-color: black;
+}
+
 /* Footer */
 hr { 
     margin: 0px;
