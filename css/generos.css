@@ -1,28 +1,69 @@
 /* Sitio de géneros */
-body{
-    background-color: black;
-}
 
 /* header */
-header{
+body {
+    background-color: black;
+    margin: 0px;
+
+
+}
+.header {
+    background-image: url("../Images/Logos/img-portada-fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portada {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding:10px;
 }
 
-.titulo{
-    color: white;
+.eye {
+    margin: 10px;
+    margin-left: 5px;
 }
 
-.eye{
+.botonhome {
     text-align: right;
+    color: #A6A292;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 10px;
+}
+.title {
+    display: grid;
+    align-items: center;
+    place-items: center;
+    color:#D5B6A3;
+    padding-top: 0%;
+    margin: 0%;
+    
 }
 
+#titlegenero {
+    margin-bottom: 170px;
+    margin-top: 30px;
 
+}
 
+/* Generos */
 
+.generos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    justify-items: center;
+    margin-bottom: 30px;
+    
+}
+#imagengenero {
+    width: 450px;
 
-
+}
 
 /* footer */
 hr { 

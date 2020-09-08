@@ -1,14 +1,14 @@
 /* El margen para todo el cuerpo es de 0 */
 
 body {
-    margin: 0em;
+    margin: 0px;
     background-color: black;
 }
 
 
 
 .header {
-    background-image: url("Images/Logos/img-portada-fondo.jpg");
+    background-image: url(../Images/Logos/img-portada-fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -45,8 +45,6 @@ body {
 
 #subtitulo {
     margin-top: 0em;
-    font-size: 60px;
-    font-family: 'Arapey', serif;
     margin-bottom: 210px;
     margin-top: 20px;
 
@@ -57,12 +55,17 @@ body {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
+    justify-items: center;
+    gap: 30px;
 }
 
 .series {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-content: center;
+    justify-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .palabra {

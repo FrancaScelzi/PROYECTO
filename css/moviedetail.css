@@ -1,15 +1,83 @@
-/*Detalle de las películas y series */
+/*Detalle de las películas */
+
+body {
+    background-color:white;
+    margin: 0px;
+}
 
 /*Header*/
+
+.header {
+    background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:10px;
+} 
+
 .eye {
     margin: 10px;
     margin-left: 5px;
 }
 
-/*Body*/
-body {
-    background-color: black;
+
+.botongeneros {
+    text-align: right;
+    color: #A6A292;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 10px;
+    margin-bottom: 60px;
 }
+
+/* Main */
+
+.gatsby {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+
+   
+    
+}
+
+#imagen {
+    width: 90%;
+    justify-content: center;
+    
+
+}
+
+#titulo {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size: 80px;
+    margin-bottom: 10px;
+
+}
+
+#trama {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:30px;
+    
+}
+
+#informacion {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:30px;
+    text-decoration: none;
+    list-style: none;
+}
+
 /*Footer*/
 hr { 
     margin: 0px;
