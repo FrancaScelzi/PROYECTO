@@ -44,8 +44,55 @@ body {
     justify-content: space-around;
     margin-right:50px;
 
-   
-    
+}
+
+.lalaland {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.pulpfiction {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.thetrumanshow {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.euphoria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.blackmirror {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.strangerthings {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.thatseventiesshow {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
 }
 
 #imagen {

@@ -5,7 +5,7 @@
 
 /* Body */
 body {
-    background-color: black;
+    background-color: white;
 }
 
 /*Header*/
@@ -43,7 +43,64 @@ body {
     margin-left: 5px;
 }
 
+/*Main*/
+.euphoria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
 
+.blackmirror {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.strangerthings {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+.that70sshow {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:50px;
+}
+
+#imagen {
+    width: 90%;
+    justify-content: center;
+    
+
+}
+
+#titulo {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size: 80px;
+    margin-bottom: 10px;
+
+}
+
+#trama {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:30px;
+    
+}
+
+#informacion {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:30px;
+    text-decoration: none;
+    list-style: none;
+}
 /* Footer */
 hr { 
     margin: 0px;
