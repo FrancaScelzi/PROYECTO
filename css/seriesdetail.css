@@ -1,7 +1,8 @@
 /* Detalle de las Series */
 
-
-/*Detalle de las películas */
+* {
+    box-sizing: border-box;
+}
 
 /* Body */
 body {

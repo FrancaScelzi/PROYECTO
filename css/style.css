@@ -1,5 +1,9 @@
 /* El margen para todo el cuerpo es de 0 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     background-color: black;

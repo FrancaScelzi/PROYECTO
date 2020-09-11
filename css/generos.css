@@ -1,5 +1,9 @@
 /* Sitio de géneros */
 
+* {
+    box-sizing: border-box;
+}
+
 /* header */
 body {
     background-color: black;
