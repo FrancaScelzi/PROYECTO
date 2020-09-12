@@ -64,10 +64,49 @@ body {
     margin-bottom: 30px;
     
 }
-#imagengenero {
-    width: 450px;
+
+.polaroid {
+background-color: white;
+align-content: center;
+
 
 }
+
+.titulospolaroid  {
+    font-family: 'Arapey', serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 500%;
+}
+#imagengenero {
+    width: 450px;
+margin-bottom: 20px;
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.subtitulospolaroid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 200%;
+}
+
+#subtgeneros {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#subtnumeros {
+    text-align: right;
+    margin-right: 20px;
+}
+
 
 /* footer */
 hr { 
