@@ -52,53 +52,12 @@ body {
 
 }
 
-.lalaland {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
 
-.pulpfiction {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.thetrumanshow {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.euphoria {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.blackmirror {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.strangerthings {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.thatseventiesshow {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
+#paletagatsby { 
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
 }
 
 #imagen {
@@ -111,7 +70,7 @@ body {
 #titulo {
     font-family: 'Arapey', serif;
     color:black;
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 10px;
 
 }
@@ -119,17 +78,23 @@ body {
 #trama {
     font-family: 'Arapey', serif;
     color:black;
-    font-size:30px;
+    font-size: 28px;
+    margin-bottom: 0px;
     
 }
+
 
 #informacion {
     font-family: 'Arapey', serif;
     color:black;
-    font-size:30px;
+    font-size: 28px;
     text-decoration: none;
     list-style: none;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
 }
+
 
 /*Footer*/
 hr { 

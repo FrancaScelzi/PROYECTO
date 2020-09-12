@@ -52,38 +52,16 @@ body {
     margin-right:50px;
 }
 
-.blackmirror {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.strangerthings {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
-.that70sshow {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
-    margin-right:50px;
-}
-
 #imagen {
     width: 90%;
     justify-content: center;
-    
 
 }
 
 #titulo {
     font-family: 'Arapey', serif;
     color:black;
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 10px;
 
 }
@@ -91,16 +69,24 @@ body {
 #trama {
     font-family: 'Arapey', serif;
     color:black;
-    font-size:30px;
+    font-size:28px;
     
+}
+
+#paletaeuphoria { 
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
 }
 
 #informacion {
     font-family: 'Arapey', serif;
     color:black;
-    font-size:30px;
+    font-size:28px;
     text-decoration: none;
-    list-style: none;
+    list-style-type: none;
+    padding: 0px;
 }
 /* Footer */
 hr { 
