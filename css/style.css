@@ -1,38 +1,39 @@
 /* El margen para todo el cuerpo es de 0 */
 
+/* mobile */
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
+    margin: 0%;
     background-color: black;
 }
 
-
-
 .header {
     background-image: url(../Images/Logos/img-portada-fondo.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    
 }
 
 .portada {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding:10px;
+    padding:1%;
 }
 .eye {
     margin: 10px;
     margin-left: 5px;
 }
 
+#fotoeye {
+width: 22%;
+}
 
 .botongeneros {
     text-align: right;
     color: #A6A292;
-    font-size: 30px;
+    font-size: 100%;
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 10px;
@@ -43,49 +44,48 @@ body {
     align-items: center;
     place-items: center;
     color:#D5B6A3;
-    padding-top: 0%;
+    padding-top: 3%;
+    padding-bottom: 15%;
     margin: 0%;
 }
 
+h3 {
+    margin: 3%;
+}
+
 #subtitulo {
-    margin-top: 0em;
-    margin-bottom: 210px;
-    margin-top: 20px;
-
-}
-
-
-.films {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-content: center;
-    justify-items: center;
-    gap: 30px;
-}
-
-.series {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-content: center;
-    justify-items: center;
-    gap: 30px;
-    margin-bottom: 30px;
+    display: none;
 }
 
 .palabra {
     color:#D5B6A3;
     font-family: 'Arapey', serif;
-    font-size: 30px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    
+    font-size: 110%;
 }
 
-h3 {
-
-    margin: 15px;
+#poster{
+    width: 100%;
+    padding: 2%;
 }
+ 
+
+.films {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    justify-items: center;
+    margin-left: 2% ;
+    margin-right: 2%;
+}
+
+.series {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 10%;
+}
+
 
 hr { 
     margin: 0px;
@@ -105,50 +105,198 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 0px;
-    margin-top: 30px;
-    padding: 0px
-    
+    align-items: center;
+    margin-bottom: 0%;
+    margin-top: 2%;
+    padding: 0%;
+    font-size: 80%;
 }
+
 /* REVISAR */
 .miniterminos {
-    margin: 15px;
+    margin: 2%;
     color:#D5B6A3;
     text-decoration: none;
     font-family: 'Arapey', serif;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2%;
+    padding-left: 2%;
     border-right: solid 1px grey; 
     align-content: center;
     margin: 0px;
+
    
 }
 
 .miniterminosprivacidad { 
-     border-right: none;
-     margin: 15px;
+    border-right: none;
+    margin: 2%;
     color: #D5B6A3;
     text-decoration: none;
     font-family: 'Arapey', serif;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2%;
+    padding-left: 2%;
     align-content: center;
     margin: 0px;
-
 }
-
-
 
 #copyright {
-            color: rgb(161, 160, 160);
-            width: 100%;
-            text-align: center;
-            font-family: 'Arapey', serif;
-            align-content: center;
-            margin-top: 20px;
-        
-
+    color: rgb(161, 160, 160);
+    width: 100%;
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 80%;
+    align-content: center;
+    margin: 0%;
 }
+
+
+
+
+/* desktop */
+
+@media (min-width: 1024){
+    .header {
+        background-image: url(../Images/Logos/img-portada-fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .portada {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding:10px;
+    }
+    .eye {
+        margin: 10px;
+        margin-left: 5px;
+    }
+    
+    
+    .botongeneros {
+        text-align: right;
+        color: #A6A292;
+        font-size: 30px;
+        text-decoration: none;
+        font-family: 'Arapey', serif;
+        margin: 10px;
+    }
+    
+    .title {
+        display: grid;
+        align-items: center;
+        place-items: center;
+        color:#D5B6A3;
+        padding-top: 0%;
+        margin: 0%;
+    }
+    
+    #subtitulo {
+        margin-top: 0em;
+        margin-bottom: 210px;
+        margin-top: 20px;
+    
+    }
+    
+    
+    .films {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-content: center;
+        justify-items: center;
+        gap: 30px;
+    }
+    
+    .series {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-content: center;
+        justify-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .palabra {
+        color:#D5B6A3;
+        font-family: 'Arapey', serif;
+        font-size: 30px;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+    
+    h3 {
+    
+        margin: 15px;
+    }
+    
+    hr { 
+        margin: 0px;
+    }
+    
+    .footer { 
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        background-color: black;
+        margin-top: auto ;
+        height: 120px;
+        width: 100%;
+        
+    }
+     
+    .terminos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        padding: 0px
+        
+    }
+    /* REVISAR */
+    .miniterminos {
+        margin: 15px;
+        color:#D5B6A3;
+        text-decoration: none;
+        font-family: 'Arapey', serif;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-right: solid 1px grey; 
+        align-content: center;
+        margin: 0px;
+       
+    }
+    
+    .miniterminosprivacidad { 
+         border-right: none;
+         margin: 15px;
+        color: #D5B6A3;
+        text-decoration: none;
+        font-family: 'Arapey', serif;
+        padding-right: 15px;
+        padding-left: 15px;
+        align-content: center;
+        margin: 0px;
+    
+    }
+    
+    
+    
+    #copyright {
+                color: rgb(161, 160, 160);
+                width: 100%;
+                text-align: center;
+                font-family: 'Arapey', serif;
+                align-content: center;
+                margin-top: 20px;
+            
+    
+    }
+}
+
+
+
    
   
     
