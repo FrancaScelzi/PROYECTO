@@ -1,0 +1,322 @@
+/* Detalle de las Series */
+
+* {
+    box-sizing: border-box;
+}
+
+/*Mobile*/
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+/*Header*/
+
+.header {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:1%;
+} 
+
+.eye {
+    margin: 3%;
+    margin-left: 3%;
+}
+
+
+.botongeneros {
+    text-align: right;
+    color: #A6A292;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 3%;
+    
+}
+.eye {
+    margin: 3%;
+    margin-left: 3%;
+}
+#fotoeye {
+    width: 22%;
+    }
+
+/*Main*/
+.contenido {
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    justify-content: space-around;
+}
+
+#imagen {
+    margin-top:none;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+#titulo {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size: 250%;
+    margin-bottom:3%;
+    margin-top: 3%;
+    margin: 1%;
+
+}
+
+#trama {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:100%;
+    margin: 1%;
+    margin-top:5%;
+
+    
+}
+
+#paleta { 
+    display: none;
+    
+
+}
+
+#informacion {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:100%;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0%;
+    margin: 1%;
+    margin-top:5%;
+    margin-bottom: 5%;
+
+}
+/* Footer */
+hr { 
+    margin: 0%;
+}
+
+.footer { 
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    background-color: black;
+    margin-top: auto ;
+    height: 5em;
+    width: 100%;
+    
+}
+ 
+.terminos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-top: 2%;
+    padding: 0%;
+    font-size: 80%;
+}
+
+
+.miniterminos {
+    margin: 2%;
+    color:#D5B6A3;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-right: solid 1px grey; 
+    align-content: center;
+    margin: 0%;
+
+   
+}
+
+.miniterminosprivacidad { 
+    border-right: none;
+    margin: 2%;
+    color: #D5B6A3;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    padding-right: 2%;
+    padding-left: 2%;
+    align-content: center;
+    margin: 0px;
+}
+
+#copyright {
+    color: rgb(161, 160, 160);
+    width: 100%;
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 80%;
+    align-content: center;
+    margin: 0%;
+}
+
+
+/* Body */
+
+/*Desktop*/
+@media (min-width:1024px){
+body {
+    background-color: white;
+    margin: 0%;
+}
+
+/*Header*/
+
+.header {
+    background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:1%;
+} 
+
+a.eye {
+    margin: 1%;
+    margin-left: 1%;
+    width: 50%;
+    margin-bottom: 2.5%;
+    
+}
+
+
+.botongeneros {
+    text-align: right;
+    color: #A6A292;
+    font-size: 200%;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 1%;
+    margin-bottom: 2.5%;
+}
+
+
+/*Main*/
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    margin-right:3%;
+}
+
+#imagen {
+    width: 90%;
+    justify-content: center;
+
+}
+
+#titulo {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size: 500%;
+    margin-top:3%;
+    margin-bottom: 3%;
+
+}
+
+#trama {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:180%;
+    
+}
+
+#paleta { 
+    display: grid;
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 0%;
+}
+
+#informacion {
+    font-family: 'Arapey', serif;
+    color:black;
+    font-size:180%;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0%;
+}
+/* Footer */
+hr { 
+    margin: 0%;
+}
+
+.footer { 
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    background-color: black;
+    height: 8em;
+    width: 100%;
+    
+}
+ 
+.terminos{
+    display: flex;
+    font-size: 130%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    
+}
+
+.miniterminos {
+    margin: 1%;
+    color:#D5B6A3;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-right: solid 1px grey; 
+    align-content: center;
+    margin: 0%;
+   
+}
+
+.miniterminosprivacidad { 
+    border-right: none;
+    margin: 1%;
+    color: #D5B6A3;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    padding-right: 1%;
+    padding-left: 1%;
+    align-content: center;
+    margin: 0%;
+}
+
+
+
+#copyright {
+    color: rgb(161, 160, 160);
+    font-size: 130%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arapey', serif;
+    align-content: center;
+    
+        
+
+}
+
+}

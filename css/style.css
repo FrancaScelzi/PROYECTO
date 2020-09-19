@@ -22,10 +22,10 @@ body {
     padding:1%;
 }
 .eye {
-    margin: 10px;
-    margin-left: 5px;
-}
+    margin: 3%;
+    margin-left: 3%;
 
+}
 #fotoeye {
 width: 22%;
 }
@@ -36,7 +36,7 @@ width: 22%;
     font-size: 100%;
     text-decoration: none;
     font-family: 'Arapey', serif;
-    margin: 10px;
+    margin: 3%;
 }
 
 .title {
@@ -87,6 +87,8 @@ h3 {
 }
 
 
+
+/*Footer Mobile*/
 hr { 
     margin: 0px;
 }
@@ -96,7 +98,7 @@ hr {
     grid-template-columns: repeat(1 , 1fr);
     background-color: black;
     margin-top: auto ;
-    height: 120px;
+    height: 5em;
     width: 100%;
     
 }
@@ -112,7 +114,7 @@ hr {
     font-size: 80%;
 }
 
-/* REVISAR */
+
 .miniterminos {
     margin: 2%;
     color:#D5B6A3;
@@ -122,7 +124,7 @@ hr {
     padding-left: 2%;
     border-right: solid 1px grey; 
     align-content: center;
-    margin: 0px;
+    margin: 0%;
 
    
 }
@@ -152,9 +154,9 @@ hr {
 
 
 
-/* desktop */
+/* Desktop */
 
-@media (min-width: 1024){
+@media (min-width: 1024px){
     .header {
         background-image: url(../Images/Logos/img-portada-fondo.jpg);
         background-size: cover;
@@ -164,21 +166,23 @@ hr {
     .portada {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding:10px;
+        padding:1%;
     }
-    .eye {
-        margin: 10px;
-        margin-left: 5px;
+    a.eye {
+        margin: 1%;
+        margin-left: 1%;
+        width: 70%;
     }
     
     
     .botongeneros {
         text-align: right;
         color: #A6A292;
-        font-size: 30px;
+        font-size: 230%;
         text-decoration: none;
         font-family: 'Arapey', serif;
-        margin: 10px;
+        margin: 1%;
+        
     }
     
     .title {
@@ -188,12 +192,14 @@ hr {
         color:#D5B6A3;
         padding-top: 0%;
         margin: 0%;
+        padding-bottom: 0%;
     }
     
     #subtitulo {
+        display: grid;
         margin-top: 0em;
-        margin-bottom: 210px;
-        margin-top: 20px;
+        margin-bottom: 15%;
+        margin-top: 5%;
     
     }
     
@@ -203,7 +209,9 @@ hr {
         grid-template-columns: repeat(4,1fr);
         align-content: center;
         justify-items: center;
-        gap: 30px;
+        gap: 2%;
+        margin-right:1%;
+        margin-left: 1%;
     }
     
     .series {
@@ -211,8 +219,10 @@ hr {
         grid-template-columns: repeat(4,1fr);
         align-content: center;
         justify-items: center;
-        gap: 30px;
-        margin-bottom: 30px;
+        gap: 2%;
+        margin-bottom: 3%;
+        margin-right:1%;
+        margin-left: 1%;
     }
     
     .palabra {
@@ -230,69 +240,67 @@ hr {
         margin: 15px;
     }
     
-    hr { 
-        margin: 0px;
-    }
     
+    /* Footer Desktop */
+    .hr { 
+    margin: 0%;
+    }
+
     .footer { 
-        display: grid;
-        grid-template-columns: repeat(1 , 1fr);
-        background-color: black;
-        margin-top: auto ;
-        height: 120px;
-        width: 100%;
-        
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    background-color: black;
+    height: 8em;
+    width: 100%;
+    
     }
-     
+ 
     .terminos{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0px;
-        margin-top: 30px;
-        padding: 0px
-        
-    }
-    /* REVISAR */
+    display: flex;
+    font-size: 130%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    
+}
+
     .miniterminos {
-        margin: 15px;
+        margin: 1%;
         color:#D5B6A3;
         text-decoration: none;
         font-family: 'Arapey', serif;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 1%;
+        padding-left: 1%;
         border-right: solid 1px grey; 
         align-content: center;
-        margin: 0px;
-       
-    }
-    
+        margin: 0%;
+   
+}
+
     .miniterminosprivacidad { 
-         border-right: none;
-         margin: 15px;
+        border-right: none;
+        margin: 1%;
         color: #D5B6A3;
         text-decoration: none;
         font-family: 'Arapey', serif;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 1%;
+        padding-left: 1%;
         align-content: center;
-        margin: 0px;
-    
-    }
-    
-    
-    
+        margin: 0%;
+}
+
+
+
     #copyright {
-                color: rgb(161, 160, 160);
-                width: 100%;
-                text-align: center;
-                font-family: 'Arapey', serif;
-                align-content: center;
-                margin-top: 20px;
-            
-    
-    }
+        color: rgb(161, 160, 160);
+        font-size: 130%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Arapey', serif;
+        align-content: center;
+}
 }
 
 
