@@ -60,7 +60,7 @@ body {
 
 .generos {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(1, 2fr);
     align-content: center;
     gap: 2%;
     margin-left: 2%;
@@ -113,9 +113,6 @@ body {
     margin-right: 3%;
 }
 
-#polaroidguerra{
-    display: none;
-}
 
 /* Footer Mobile*/
 hr { 
@@ -182,18 +179,7 @@ hr {
 
 @media (min-width:1024px) {
     
-    .header {
-        background-image: url("../Images/Logos/img-portada-fondo.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .portada {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding:1%;
-    }
-    
+
     .eye {
         margin: 1%;
         margin-left: 1%;
@@ -201,21 +187,11 @@ hr {
     }
     
     .botonhome {
-        text-align: right;
-        color: #A6A292;
         font-size: 230%;
-        text-decoration: none;
-        font-family: 'Arapey', serif;
         margin: 1%;
     }
 
     .title {
-        display: grid;
-        align-items: center;
-        place-items: center;
-        color:#D5B6A3;
-        padding-top: 0%;
-        margin: 0%;
         padding-bottom: 0%;
     }
     
@@ -227,117 +203,51 @@ hr {
         
     
     /* Generos */
-
+    /*REVISAR */
     .generos {
-        display: grid;
         grid-template-columns: repeat(3,1fr);
+        gap: 2%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        padding:2%;
         align-content: center;
-        gap: 30px;
-        margin-top: 30px;
         justify-items: center;
-        margin-bottom: 30px;
     }
 
-    .polaroid {
-        background-color: white;
-        align-content: center;
-    }
 
     .titulospolaroid  {
-        font-family: 'Arapey', serif;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 30px;
-        margin-top: 0px;
-        text-align: center;
         font-size: 500%;
     }
 
-    #imagengenero {
-        width: 450px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     .subtitulospolaroid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-        font-family: 'Arapey', serif;
         font-size: 200%;
-    }
-
-    #subtgeneros {
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    #subtnumeros {
-        text-align: right;
-        margin-right: 20px;
-    }
-
-    #polaroidguerra{
-        display: initial;
     }
 
     /* Footer Desktop */
 
-    .hr { 
-        margin: 0%;
-    }
-
     .footer { 
-        display: grid;
-        grid-template-columns: repeat(1 , 1fr);
-        background-color: black;
-        height: 8em;
-        width: 100%;
+    height: 8em;
     }
-    
+ 
     .terminos{
-        display: flex;
         font-size: 130%;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 0%;
         margin-top: 0%;
-        padding: 0%;
-    }
+}
 
     .miniterminos {
-        margin: 1%;
-        color:#D5B6A3;
-        text-decoration: none;
-        font-family: 'Arapey', serif;
+        margin: 0%;
         padding-right: 1%;
         padding-left: 1%;
-        border-right: solid 1px grey; 
-        align-content: center;
-        margin: 0%;
-    }
-    
+}
+
     .miniterminosprivacidad { 
-        border-right: none;
         margin: 1%;
-        color: #D5B6A3;
-        text-decoration: none;
-        font-family: 'Arapey', serif;
         padding-right: 1%;
-        padding-left: 1%;
-        align-content: center;
-        margin: 0%;
-    }
-    
+        padding-left: 1%;   
+}       
+
     #copyright {
-        color: rgb(161, 160, 160);
         font-size: 130%;
-        width: 100%;
-        text-align: center;
-        font-family: 'Arapey', serif;
-        align-content: center;
-    }
+}
 
 }
