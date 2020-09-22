@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* header */
+/* Header */
 body {
     background-color: black;
     margin: 0px;
@@ -173,7 +173,12 @@ hr {
     margin:0%;       
 }
 
-
+/* Tablet */
+@media (min-width:576px) {
+    .generos {
+        grid-template-columns: repeat(2, 1fr);
+}
+}
 
 /*Desktop*/
 
