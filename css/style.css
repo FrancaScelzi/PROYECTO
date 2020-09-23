@@ -27,7 +27,7 @@ body {
     margin-left: 3%;
 
 }
-#fotoeye {
+.fotoeye {
 width: 22%;
 }
 
@@ -54,7 +54,7 @@ h3 {
     margin: 3%;
 }
 
-#subtitulo {
+.subtitulo {
     display: none;
 }
 
@@ -64,10 +64,7 @@ h3 {
     font-size: 25px;
 }
 
-#poster{
-    width: 100%;
-    padding: 2%;
-}
+
  
 
 .films {
@@ -77,6 +74,17 @@ h3 {
     justify-items: center;
     margin-left: 2% ;
     margin-right: 2%;
+}
+
+.polaroid {
+    background-color: white;
+}
+
+.textopolaroid {
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    font-size: 100%;
+    margin-left: 2%
 }
 
 .series {
@@ -213,7 +221,7 @@ hr {
         margin: 1%;
     }
     
-    #subtitulo {
+    .subtitulo {
         display: grid;
         margin-top: 0em;
         margin-bottom: 15%;

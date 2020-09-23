@@ -45,7 +45,7 @@ body {
     margin: 3%;
     margin-left: 3%;
 }
-#fotoeye {
+.fotoeye {
     width: 22%;
     }
 
@@ -56,7 +56,7 @@ body {
     justify-content: space-around;
 }
 
-#imagen {
+.imagen {
     margin-top:none;
     width: 100%;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
 }
 
 
-#titulo {
+.titulo {
     font-family: 'Arapey', serif;
     color:black;
     font-size: 250%;
@@ -74,7 +74,7 @@ body {
 
 }
 
-#trama {
+.trama {
     font-family: 'Arapey', serif;
     color:black;
     font-size:100%;
@@ -84,13 +84,13 @@ body {
     
 }
 
-#paleta { 
+.paleta { 
     display: none;
     
 
 }
 
-#informacion {
+.informacion {
     font-family: 'Arapey', serif;
     color:black;
     font-size:100%;
@@ -208,20 +208,20 @@ a.eye {
     margin-right:3%;
 }
 
-#imagen {
+.imagen {
     width: 90%;
 }
 
-#titulo {
+.titulo {
     font-size: 500%;
 }
 
-#trama {
+.trama {
     font-size:180%;
   
 }
 
-#paleta { 
+.paleta { 
     display: grid;
     width: 50%;
     margin-top: 3%;
@@ -229,7 +229,7 @@ a.eye {
     padding: 0%;
 }
 
-#informacion {
+.informacion {
     font-size:180%;
 }
 /* Footer */
