@@ -23,6 +23,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding:1%;
+    align-items: center;
 } 
 
 .eye {
@@ -167,27 +168,23 @@ hr {
 
 /* Body */
 
+/*Tablet*/
+@media (min-width:576px) {
+.botongeneros {
+        font-size: 150%;
+    
+}
+
 /*Desktop*/
 @media (min-width:1024px){
-body {
-    background-color: white;
-    margin: 0%;
-}
 
 /*Header*/
 
 .header {
     background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    
 }
 
-.portada {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding:1%;
-} 
 
 a.eye {
     margin: 1%;
@@ -199,44 +196,29 @@ a.eye {
 
 
 .botongeneros {
-    text-align: right;
-    color: #A6A292;
     font-size: 200%;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
     margin: 1%;
     margin-bottom: 2.5%;
 }
-
 
 /*Main*/
 .contenido {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-content: space-around;
     margin-right:3%;
 }
 
 #imagen {
     width: 90%;
-    justify-content: center;
-
 }
 
 #titulo {
-    font-family: 'Arapey', serif;
-    color:black;
     font-size: 500%;
-    margin-top:3%;
-    margin-bottom: 3%;
-
 }
 
 #trama {
-    font-family: 'Arapey', serif;
-    color:black;
     font-size:180%;
-    
+  
 }
 
 #paleta { 
@@ -248,74 +230,36 @@ a.eye {
 }
 
 #informacion {
-    font-family: 'Arapey', serif;
-    color:black;
     font-size:180%;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0%;
 }
 /* Footer */
-hr { 
-    margin: 0%;
-}
 
 .footer { 
-    display: grid;
-    grid-template-columns: repeat(1 , 1fr);
-    background-color: black;
     height: 8em;
-    width: 100%;
-    
 }
  
 .terminos{
-    display: flex;
     font-size: 130%;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 0%;
     margin-top: 0%;
-    padding: 0%;
-    
 }
 
 .miniterminos {
     margin: 1%;
-    color:#D5B6A3;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
     padding-right: 1%;
     padding-left: 1%;
-    border-right: solid 1px grey; 
-    align-content: center;
-    margin: 0%;
-   
 }
 
 .miniterminosprivacidad { 
-    border-right: none;
     margin: 1%;
-    color: #D5B6A3;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
     padding-right: 1%;
     padding-left: 1%;
-    align-content: center;
-    margin: 0%;
 }
 
 
 
 #copyright {
-    color: rgb(161, 160, 160);
     font-size: 130%;
-    width: 100%;
-    text-align: center;
-    font-family: 'Arapey', serif;
-    align-content: center;
     
-        
 
 }
 
