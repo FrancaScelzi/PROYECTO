@@ -63,6 +63,9 @@ body {
 
 }
 
+.imgdesktop {
+    display: none;
+}
 
 .titulo {
     font-family: 'Arapey', serif;
@@ -215,13 +218,33 @@ a.eye {
 .contenido {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-right:3%;
+    column-gap: 20px;
 }
 
 .imagen {
-    width: 90%;
+    display: none;
 }
 
+.imgdesktopgatsby {
+    display: grid;
+    background-image: url(../Images/Detail/Movies/img-detalle-gatsby.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgdesktopeuphoria {
+    display: grid;
+    background-image: url(../Images/Detail/Series/img-detalle-euphoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgdesktopjyy {
+    display: grid;
+    background-image: url(../Images/Detail/Documental/img-detalle-jhonyyoko.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .titulo {
     font-size: 80px;
 }
@@ -275,4 +298,5 @@ a.eye {
     font-size:15px;
 }
 
+}
 }
