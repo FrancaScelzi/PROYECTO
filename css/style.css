@@ -34,7 +34,7 @@ width: 22%;
 .botongeneros {
     text-align: right;
     color: #A6A292;
-    font-size: 100%;
+    font-size: 18px;
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 3%;
@@ -51,7 +51,7 @@ width: 22%;
 }
 
 h3 {
-    margin: 3%;
+    margin: 5%;
 }
 
 .subtitulo {
@@ -61,52 +61,60 @@ h3 {
 .palabra {
     color:#D5B6A3;
     font-family: 'Arapey', serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
- 
-
-.films {
+.contenido {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 2fr);
     align-content: center;
+    gap: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 50%;
     justify-items: center;
-    margin-left: 2% ;
+}
+
+.polaroidfilms {
+    background-color: #D5B6A3;
+    background-image: url(../Images/Logos/img-textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.polaroidseries {
+    background-color: #A6A292;
+    background-image: url(../Images/Logos/img-textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.polaroiddoc {
+    background-color:#f1dca7;
+    background-image: url(../Images/Logos/img-textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.imagen {
+    width: 95%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
     margin-right: 2%;
 }
-
-.polaroid {
-    background-color: white;
-}
-
 .textopolaroid {
     text-decoration: none;
     font-family: 'Arapey', serif;
-    font-size: 100%;
-    margin-left: 2%
-}
-
-.series {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-bottom: 10%;
-    align-content: center;
-    justify-items: center;
+    font-size: 20px;
     margin-left: 2%;
-    margin-right: 2%;
+    line-height: 20%;
 }
-
-.documentales {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-bottom: 10%;
-    align-content: center;
-    justify-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
 
 
 /*Footer Mobile*/
@@ -132,7 +140,7 @@ hr {
     margin-bottom: 0%;
     margin-top: 2%;
     padding: 0%;
-    font-size: 80%;
+    font-size:12px ;
 }
 
 
@@ -167,27 +175,28 @@ hr {
     width: 100%;
     text-align: center;
     font-family: 'Arapey', serif;
-    font-size: 80%;
+    font-size: 12px;
+    align-content: center;
+    margin: 0%;
+}
+
+.names {
+    color:  rgb(161, 160, 160);
+    width: 100%;
+    text-align: center;
+    font-family: 'Arapey', serif;
+    font-size: 10px;
     align-content: center;
     margin: 0%;
 }
 
 
-
 /* Tablet */
 @media (min-width:576px) {
     .botongeneros {
-        font-size: 200%;
+        font-size: 35px;
     }
-    .films {
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-    .series {
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-    .documentales {
+    .contenido {
         grid-template-columns: repeat(2,1fr);
     }
     
@@ -208,7 +217,7 @@ hr {
     
     
     .botongeneros {
-        font-size: 230%;
+        font-size: 40px;
         margin: 1%;
     }
     
@@ -236,32 +245,14 @@ hr {
     }
     
     
-    .films {
+    .contenido {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 1%;
         margin-right:1%;
         margin-left: 1%;
+        margin-bottom: 2%;
     }
-    
-    .series {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 1%;
-        margin-bottom: 3%;
-        margin-right:1%;
-        margin-left: 1%;
-    }
-    
-    .documentales {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 1%;
-        margin-bottom: 3%;
-        margin-right:1%;
-        margin-left: 1%;
-    }
-    
     
     /* Footer Desktop */
 
@@ -270,7 +261,7 @@ hr {
     }
  
     .terminos{
-        font-size: 130%;
+        font-size:20px ;
         margin-top: 0%;
 }
 
@@ -289,7 +280,11 @@ hr {
 
 
     #copyright {
-        font-size: 130%;
+        font-size: 20px;
+}
+
+    .names {
+        font-size: 15px;
 }
 }
 
