@@ -1,5 +1,3 @@
-/* El margen para todo el cuerpo es de 0 */
-
 /* Mobile */
 * {
     box-sizing: border-box;
@@ -28,7 +26,7 @@ body {
 
 }
 .fotoeye {
-width: 22%;
+    width: 22%;
 }
 
 .botongeneros {
@@ -51,7 +49,7 @@ width: 22%;
 }
 
 h3 {
-    margin: 5%;
+    margin: 2%;
 }
 
 .subtitulo {
@@ -67,14 +65,10 @@ h3 {
 
 .contenido {
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: repeat(1, 1fr);
     align-content: center;
-    gap: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    margin-bottom: 50%;
-    justify-items: center;
+    margin: 2%;
+    gap: 10px;
 }
 
 .polaroidfilms {
@@ -83,6 +77,8 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
+    display: grid;
+    gap: 10px;
 }
 
 .polaroidseries {
@@ -91,6 +87,8 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
+    display: grid;
+    gap: 10px;
 }
 
 .polaroiddoc {
@@ -99,21 +97,32 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
+    display: grid;
+    gap: 10px;
 }
 
 .imagen {
-    width: 95%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 100%;
+    padding: 2%;
 }
 .textopolaroid {
     text-decoration: none;
     font-family: 'Arapey', serif;
     font-size: 20px;
-    margin-left: 2%;
-    line-height: 20%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.textopolaroidtitulo{
+    margin: 0px;
+}
+
+.textopolaroidaño{
+    margin: 0px;
+}
+
+.textopolaroiddirector{
+    margin: 0px;
 }
 
 
@@ -189,6 +198,7 @@ hr {
     align-content: center;
     margin: 0%;
 }
+
 
 
 /* Tablet */
