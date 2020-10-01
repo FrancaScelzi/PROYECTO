@@ -22,9 +22,8 @@ body {
 }
 .eye {
     margin: 3%;
-    margin-left: 3%;
-
 }
+
 .fotoeye {
     width: 22%;
 }
@@ -40,12 +39,9 @@ body {
 
 .title {
     display: grid;
-    align-items: center;
     place-items: center;
-    color:#D5B6A3;
     padding-top: 3%;
     padding-bottom: 15%;
-    margin: 0%;
 }
 
 h3 {
@@ -66,7 +62,6 @@ h3 {
 .contenido {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    align-content: center;
     margin: 2%;
     gap: 10px;
 }
@@ -74,9 +69,7 @@ h3 {
 .polaroidfilms {
     background-color: #D5B6A3;
     background-image: url(../Images/Logos/img-textura.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    align-content: center;
     display: grid;
     gap: 10px;
 }
@@ -84,9 +77,7 @@ h3 {
 .polaroidseries {
     background-color: #A6A292;
     background-image: url(../Images/Logos/img-textura.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    align-content: center;
     display: grid;
     gap: 10px;
 }
@@ -94,9 +85,7 @@ h3 {
 .polaroiddoc {
     background-color:#f1dca7;
     background-image: url(../Images/Logos/img-textura.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    align-content: center;
     display: grid;
     gap: 10px;
 }
@@ -106,7 +95,6 @@ h3 {
     padding: 2%;
 }
 .textopolaroid {
-    text-decoration: none;
     font-family: 'Arapey', serif;
     font-size: 20px;
     margin-bottom: 10px;
@@ -134,11 +122,7 @@ hr {
 .footer { 
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
-    background-color: black;
-    margin-top: auto ;
     height: 5em;
-    width: 100%;
-    
 }
  
 .terminos{
@@ -161,8 +145,6 @@ hr {
     padding-right: 2%;
     padding-left: 2%;
     border-right: solid 1px grey; 
-    justify-content: center;
-    align-content: center;
     margin: 0%;
    
 }
@@ -181,11 +163,9 @@ hr {
 
 #copyright {
     color: rgb(161, 160, 160);
-    width: 100%;
     text-align: center;
     font-family: 'Arapey', serif;
     font-size: 12px;
-    align-content: center;
     margin: 0%;
 }
 
@@ -215,10 +195,7 @@ hr {
 /* Desktop */
 
 @media (min-width: 1024px){
-    .header {
-        background-size: cover; 
-    }
-    
+
     a.eye {
         margin: 1%;
         margin-left: 1%;

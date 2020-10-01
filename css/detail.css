@@ -114,10 +114,8 @@ hr {
 .footer { 
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
-    background-color: black;
-    margin-top: auto ;
     height: 5em;
-    width: 100%;
+    background-color: black;
     
 }
  
@@ -141,7 +139,6 @@ hr {
     padding-right: 2%;
     padding-left: 2%;
     border-right: solid 1px grey; 
-    align-content: center;
     margin: 0%;
 
    
@@ -161,11 +158,9 @@ hr {
 
 #copyright {
     color: rgb(161, 160, 160);
-    width: 100%;
     text-align: center;
     font-family: 'Arapey', serif;
     font-size: 12px;
-    align-content: center;
     margin: 0%;
 }
 
@@ -179,7 +174,6 @@ hr {
     margin: 0%;
 }
 
-/* Body */
 
 /*Tablet*/
 @media (min-width:576px) {
