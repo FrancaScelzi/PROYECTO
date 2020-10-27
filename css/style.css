@@ -169,6 +169,18 @@ hr {
     margin: 0%;
 }
 
+.logosocialmedia{
+    width: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
 .names {
     color:  rgb(161, 160, 160);
     width: 100%;
@@ -190,6 +202,9 @@ hr {
         grid-template-columns: repeat(2,1fr);
     }
     
+    .logosocialmedia{
+
+    }
 }
 
 /* Desktop */
@@ -266,6 +281,10 @@ hr {
 
     #copyright {
         font-size: 20px;
+}
+
+.logosocialmedia{
+
 }
 
     .names {
