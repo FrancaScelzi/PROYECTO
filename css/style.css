@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background-image: url(../Images/Logos/img-portada-fondo.jpg);
+    background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -37,19 +37,16 @@ body {
     margin: 3%;
 }
 
-.title {
-    display: grid;
-    place-items: center;
-    padding-top: 3%;
-    padding-bottom: 15%;
-}
+#carouselExampleIndicators {
+    margin-bottom: 2px;
+ }
 
 h3 {
     margin: 2%;
 }
 
-.subtitulo {
-    display: none;
+main {
+    background-color: black;
 }
 
 .palabra {
@@ -114,85 +111,6 @@ h3 {
 }
 
 
-/*Footer Mobile*/
-hr { 
-    margin: 0px;
-}
-
-.footer { 
-    display: grid;
-    grid-template-columns: repeat(1 , 1fr);
-    height: 5em;
-}
- 
-.terminos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0%;
-    margin-top: 2%;
-    padding: 0%;
-    font-size:12px ;
-}
-
-
-.miniterminos {
-    margin: 2%;
-    color:#D5B6A3;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
-    padding-right: 2%;
-    padding-left: 2%;
-    border-right: solid 1px grey; 
-    margin: 0%;
-   
-}
-
-.miniterminosprivacidad { 
-    border-right: none;
-    margin: 2%;
-    color: #D5B6A3;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
-    padding-right: 2%;
-    padding-left: 2%;
-    align-content: center;
-    margin: 0px;
-}
-
-#copyright {
-    color: rgb(161, 160, 160);
-    text-align: center;
-    font-family: 'Arapey', serif;
-    font-size: 12px;
-    margin: 0%;
-}
-
-.logosocialmedia{
-    width: 20px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.socialmedia{
-    display: flex;
-    justify-content: center;
-    margin: 3px;
-}
-
-.names {
-    color:  rgb(161, 160, 160);
-    width: 100%;
-    text-align: center;
-    font-family: 'Arapey', serif;
-    font-size: 10px;
-    align-content: center;
-    margin: 0%;
-}
-
-
-
 /* Tablet */
 @media (min-width:576px) {
     .botongeneros {
@@ -202,9 +120,6 @@ hr {
         grid-template-columns: repeat(2,1fr);
     }
     
-    .logosocialmedia{
-
-    }
 }
 
 /* Desktop */
@@ -256,40 +171,6 @@ hr {
         margin-bottom: 2%;
     }
     
-    /* Footer Desktop */
-
-    .footer { 
-    height: 8em;
-    }
- 
-    .terminos{
-        font-size:20px ;
-        margin-top: 0%;
-}
-
-    .miniterminos {
-        padding-right: 1%;
-        padding-left: 1%;
-}
-
-    .miniterminosprivacidad { 
-        padding-right: 1%;
-        padding-left: 1%;   
-}       
-
-
-
-    #copyright {
-        font-size: 20px;
-}
-
-.logosocialmedia{
-
-}
-
-    .names {
-        font-size: 15px;
-}
 }
 
 
