@@ -10,7 +10,7 @@ hr {
     background-color: black;
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
-    height: 5em;
+    height: 8em;
 }
  
 .terminos{
@@ -61,6 +61,15 @@ hr {
     width: 20px;
     margin-left: 2px;
     margin-right: 2px;
+}
+
+.logoapi {
+    display: block;
+    margin: auto;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
 
 .socialmedia{
