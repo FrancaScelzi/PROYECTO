@@ -88,29 +88,25 @@ hr {
     height: 8em;
     }
  
-    .terminos{
+.terminos{
         font-size:20px ;
         margin-top: 0%;
 }
 
-    .miniterminos {
+.miniterminos {
         padding-right: 1%;
         padding-left: 1%;
 }
 
-    .miniterminosprivacidad { 
+.miniterminosprivacidad { 
         padding-right: 1%;
         padding-left: 1%;   
 }       
 
 
 
-    #copyright {
+#copyright {
         font-size: 20px;
-}
-
-.logosocialmedia{
-
 }
 
     .names {
