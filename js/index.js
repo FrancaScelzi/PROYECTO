@@ -1,13 +1,14 @@
-let url = ""
+let url = ''
 
 fetch (url)
-.then (function(response)
-{
-    return response.json()
-})
+.then (datos=>datos.json ()
+.then (respuesta => {
+    console.log (respuesta);
+    let movies = ''
 
-.then (function (data){
-    console.log (data);
+    respuesta.results.forEach (pelicula => {
+        movies += ''
+    })
+}))
 
-})
-
+.catch (error=> console.log (error))
