@@ -8,6 +8,20 @@ body {
     background-color: black;
 }
 
+/*Buscador*/
+
+.buscador {
+    background-color: black;
+    display: grid;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.searchfield {
+
+}
+
+
+/*Header*/
 .header {
     background-color: black;
     background-size: 100%;
@@ -41,8 +55,13 @@ body {
     margin-bottom: 2px;
  }
 
+ .espacio {
+     display: block;
+     height: 2em;
+ }
 h3 {
-    margin: 2%;
+    margin: 5px;
+   
 }
 
 main {
@@ -56,14 +75,28 @@ main {
 }
 
 
-.contenido {
+.toprated {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 2%;
     gap: 10px;
 }
 
-.polaroidfilms {
+.peliculaspopulares {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2%;
+    gap: 10px;
+}
+
+.seriespopulares {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2%;
+    gap: 10px;
+}
+
+.polaroid {
     background-color: #D5B6A3;
     background-image: url(../Images/Logos/img-textura.png);
     background-size: cover;
@@ -71,21 +104,6 @@ main {
     gap: 10px;
 }
 
-.polaroidseries {
-    background-color: #A6A292;
-    background-image: url(../Images/Logos/img-textura.png);
-    background-size: cover;
-    display: grid;
-    gap: 10px;
-}
-
-.polaroiddoc {
-    background-color:#f1dca7;
-    background-image: url(../Images/Logos/img-textura.png);
-    background-size: cover;
-    display: grid;
-    gap: 10px;
-}
 
 .imagen {
     width: 100%;
@@ -162,7 +180,16 @@ main {
     }
     
     
-    .contenido {
+    .toprated {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1%;
+        margin-right:1%;
+        margin-left: 1%;
+        margin-bottom: 2%;
+    }
+
+    .peliculaspopulares {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 1%;
@@ -171,6 +198,14 @@ main {
         margin-bottom: 2%;
     }
     
+    .seriespopulares {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1%;
+        margin-right:1%;
+        margin-left: 1%;
+        margin-bottom: 2%;
+    }
 }
 
 
