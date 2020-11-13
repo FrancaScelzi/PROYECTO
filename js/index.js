@@ -14,13 +14,15 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
 
     
         movies += 
-        `<article class= "polaroid" > 
-            <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
-            
-            <div class = "textopolaroid"> 
-                <p class= "textopolaroidtitulo"> ${pelicula.title} </p> 
-                <p class = "textopolaroidaño"> ${pelicula.release_date} </p>
-            </article>`
+        `<a href="detail.html?id=${pelicula.id}"> 
+            <article class= "polaroid" > 
+                <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
+                
+                <div class = "textopolaroid"> 
+                    <p class= "textopolaroidtitulo"> ${pelicula.title} </p> 
+                    <p class = "textopolaroidaño"> ${pelicula.release_date} </p>
+             </article>
+         </a>`
         }
     });
 
