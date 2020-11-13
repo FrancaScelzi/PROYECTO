@@ -16,8 +16,6 @@ fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=50a53e8e9d1beeefe2
         `<div class="polaroid">
         <p class= " titulospolaroid"> ${genero.name} </p>
         <div class="subtitulospolaroid">
-            <p class="subtgeneros"> GÉNEROS </p>
-            <p class="subtnumeros">  </p>
         </div>
         </div>`
         }

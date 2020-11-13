@@ -1,7 +1,6 @@
 // JS Home
 
 // Peliculas populares
-
 let containerPeliculasPopulares = document.querySelector ('.peliculaspopulares');
 
 fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442f1dbc53288d')
@@ -11,7 +10,7 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
     let movies = ''
 
     respuesta.results.forEach ((pelicula, index) => {
-        if (index < 4){
+        if (index < 6){
 
     
         movies += 
@@ -40,7 +39,7 @@ fetch ('https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1d
     let movies = ''
 
     respuesta.results.forEach ((serie, index) => {
-        if (index < 4){
+        if (index < 6){
 
     
         movies += 
@@ -68,7 +67,7 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=50a53e8e9d1beeefe24
     let movies = ''
 
     respuesta.results.forEach ((pelicula, index) => {
-        if (index < 4){
+        if (index < 6){
 
     
         movies += 
