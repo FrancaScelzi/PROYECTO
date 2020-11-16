@@ -17,7 +17,7 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
 
     
         movies += 
-        `<a href="detail.html?id=${pelicula.id}"> 
+        `<a href="detailFilms.html?id=${pelicula.id}"> 
             <article class= "polaroid" > 
                 <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
                 
@@ -37,7 +37,7 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
 
 let containerSeriesPopulares = document.querySelector ('.seriespopulares')
 
-fetch ('https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1dbc53288d')
+fetch (`https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1dbc53288d`)
 .then (datos=>datos.json() )
 .then (respuesta => {
     console.log (respuesta);
@@ -48,13 +48,15 @@ fetch ('https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1d
 
     
         movies += 
-        `<article class= "polaroid" > 
-            <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${serie.poster_path}"> 
+        `<a href="detailSeries.html?${serie.id}"> 
+            <article class= "polaroid" > 
+                 <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${serie.poster_path}"> 
             
-            <div class = "textopolaroid"> 
-                <p class= "textopolaroidtitulo"> ${serie.name} </p> 
-                <p class = "textopolaroidaño"> ${serie.first_air_date} </p>
-            </article>`
+                  <div class = "textopolaroid"> 
+                         <p class= "textopolaroidtitulo"> ${serie.name} </p> 
+                        <p class = "textopolaroidaño"> ${serie.first_air_date} </p>
+            </article>
+        </a>`
         }
     });
 
@@ -76,13 +78,15 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=50a53e8e9d1beeefe24
 
     
         movies += 
-        `<article class= "polaroid" > 
-            <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
+        `<a href="detailFilms.html?id=${pelicula.id}"
+            <article class= "polaroid" > 
+                 <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
             
-            <div class = "textopolaroid"> 
-                <p class= "textopolaroidtitulo"> ${pelicula.title} </p> 
-                <p class = "textopolaroidaño"> ${pelicula.release_date} </p>
-            </article>`
+                 <div class = "textopolaroid"> 
+                       <p class= "textopolaroidtitulo"> ${pelicula.title} </p> 
+                         <p class = "textopolaroidaño"> ${pelicula.release_date} </p>
+            </article>
+        </a>`
         }
     });
 
