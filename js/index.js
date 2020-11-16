@@ -1,6 +1,9 @@
 // JS Home
 
 // Peliculas populares
+
+window.localStorage.setItem ('favoritos', [])
+
 let containerPeliculasPopulares = document.querySelector ('.peliculaspopulares');
 
 fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442f1dbc53288d')
