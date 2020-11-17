@@ -1,0 +1,23 @@
+/* Hoja de Estilo */
+
+/* Detalle de géneros */
+
+body {
+    background-color: black;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Arapey', serif;
+    color: #D5B6A3;
+}
+
+.subtitulo {
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Arapey', serif;
+    color:#A6A292;
+}

@@ -66,27 +66,38 @@ body {
     background-color: white;
 }
 
-.titulospolaroid  {
+a.genero {
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+/* .titulospolaroid  {
     font-family: 'Arapey', serif;
     padding-top: 1px;
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
-}
+    text-decoration: none;
+} */
 
 .imagengenero {
     width: 100%;
     padding: 10px;
 }
 
-.subtitulospolaroid {
+/* .subtitulospolaroid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-family: 'Arapey', serif;
     font-size: 15px;
     margin-left: 2%;
     margin-right: 2%;
-}
+} */
 
 .subtgeneros {
     margin-left: 3%;
