@@ -30,7 +30,8 @@ fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
         
         
         <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
-        <li><strong>Género</strong>: </li>
+        <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
+        <li><strong>Reviews</strong>: </li>
         </ul>
         </div>
         
@@ -42,14 +43,14 @@ fetch (`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
         
     })
 
-fetch (`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}`)
-.then (datos=>datos.json() )
-.then (respuesta => {
-    console.log (respuesta)
-let detail = ''
+// fetch (`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}`)
+// .then (datos=>datos.json() )
+// .then (respuesta => {
+//     console.log (respuesta)
+// let detail = ''
 
-detail +=
-// `PONER REVIEWS`
+// detail +=
+// // `PONER REVIEWS`
 
-})
+// })
   

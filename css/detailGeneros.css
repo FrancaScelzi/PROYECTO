@@ -2,6 +2,60 @@
 
 /* Detalle de géneros */
 
+/* Header */
+
+
+/* Header */
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.header {
+    background-image: url("../Images/Logos/img-portada-fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1%;
+}
+
+.eye {
+    margin: 3%;
+}
+
+.fotoeye {
+    width: 22%;
+}
+.botonhome {
+    text-align: right;
+    color: #A6A292;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 3%;
+  
+}
+
+.title {
+    display: grid;
+    place-items: center;
+}
+
+h1.titlegenero {
+    font-family:'Arapey', serif;
+    color: white;
+    font-size: 30px;
+    margin: 80px;
+    margin-bottom: 100px;
+
+}
+
+
+/* Main */
 body {
     background-color: black;
 }
@@ -11,26 +65,22 @@ body {
     text-align: center;
     font-size: 50px;
     font-family: 'Arapey', serif;
-    color: #D5B6A3;
+    color: white;
 }
 
 .contenido {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2%;
+    gap: 10px;
 }
 
-
-
-.peliculas {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
 
 .polaroid {
-    background-color: #D5B6A3;
-    background-image: url(../Images/Logos/img-textura.png);
+    background-color: white;
     background-size: cover;
     display: grid;
-    gap: 10px;
+    gap: 20px;
 }
 
 .imagen {
@@ -50,4 +100,39 @@ body {
 
 .textopolaroidaño{
     margin: 0px;
+}
+
+/* Tablet */
+@media (min-width:576px) {
+    .botonhome {
+        font-size: 35px;
+    }
+    .contenido {
+        grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/*Desktop*/
+
+@media (min-width:1024px) {
+    
+    h1.titlegenero {
+        font-size: 80px;
+        margin-bottom: 100px;
+    }
+
+    .contenido {
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .eye {
+        margin: 1%;
+        margin-left: 1%;
+        width: 70%;
+    }
+    
+    .botonhome {
+        font-size: 40px;
+        margin: 1%;
+    }
 }

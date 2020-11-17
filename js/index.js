@@ -48,7 +48,7 @@ fetch (`https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1d
 
     
         movies += 
-        `<a href="detailSeries.html?${serie.id}"> 
+        `<a href="detailSeries.html?id=${serie.id}"> 
             <article class= "polaroid" > 
                  <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${serie.poster_path}"> 
             
@@ -78,7 +78,7 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=50a53e8e9d1beeefe24
 
     
         movies += 
-        `<a href="detailFilms.html?id=${pelicula.id}"
+        `<a class= "texto" href="detailFilms.html?id=${pelicula.id}">
             <article class= "polaroid" > 
                  <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
             

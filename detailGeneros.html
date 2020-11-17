@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/detailGeneros.css">
     <script src="js/detailGeneros.js" defer></script>
@@ -12,24 +11,36 @@
 
     <!-- Header -->
 <body>
-    <header class="header">
-        <div class="portada">
-          <!-- Logo y link a index -->      
-            <a class="eye" href="index.html">
-            <img class="fotoeye" src="images/Logos/img-logo.png" alt="Logo">
-            </a>
-            <a class="botongeneros" href="generos.html">GÉNEROS</a>
-        </div>
-      </header>
+  <header class="header">
+    <div class="portada">
+      <!-- Logo y link a index -->      
+        <a class="eye" href="index.html">
+            <img class="fotoeye" src="images/Logos/img-logo.png" width="70px" alt="Logo">
+        </a>
+        <a class="botonhome" href="index.html">HOME</a>
+    </div>
+    
+    <div class="title">
+        <h1 class="titlegenero">TITULO DEL GENERO</h1>
+    </div>
+    </header>
 
      <main>
 
-      <h1 class="genero">NOMBRE DEL GENERO</h1>
-
       <section class="contenido">
 
+        <a href="detailFilms.html">
 
-          `<a href="detailFilms.html?id=${pelicula.id}"
+          <article class= "polaroid" > 
+            <img class = "imagen" src= "Images/Géneros/img-generos-romance.jpg"> 
+            
+            <div class = "textopolaroid"> 
+              <p class= "textopolaroidtitulo"> Romance</p> 
+              <p class = "textopolaroidaño"> Romance</p>
+            </article>
+          </a> 
+      
+          <!-- `<a href="detailFilms.html?id=${pelicula.id}"
             <article class= "polaroid" > 
             <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
             
@@ -37,7 +48,7 @@
               <p class= "textopolaroidtitulo"> ${pelicula.title} </p> 
               <p class = "textopolaroidaño"> ${pelicula.release_date} </p>
             </article>
-          </a>`
+          </a>` -->
           
       
       </section>

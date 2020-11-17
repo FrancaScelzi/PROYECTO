@@ -111,12 +111,17 @@ main {
 .imagen {
     width: 100%;
     padding: 2%;
+    
 }
+
+
 .textopolaroid {
     font-family: 'Arapey', serif;
     font-size: 20px;
     margin-bottom: 10px;
     margin-left: 10px;
+    text-decoration: none;
+    
 }
 
 .textopolaroidtitulo{

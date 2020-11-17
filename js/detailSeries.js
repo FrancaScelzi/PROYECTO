@@ -24,15 +24,13 @@ fetch (url)
         `<div class="contenido">
         <img class="imagen" src="https://image.tmdb.org/t/p/w500/${respuesta.poster_path}" alt="">
         <div>
-        <h3 class="titulo">${respuesta.title}</h3>
+        <h3 class="titulo">${respuesta.name}</h3>
         <p class="trama"> ${respuesta.overview}</p>
         <ul class="informacion"> 
+      
+        <li><strong>Date</strong>: ${respuesta.last_air_date} </li>
+        <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
         
-        
-        <li><strong>Año</strong>: </li>
-        <li><strong>Director</strong>:  </li>
-        <li><strong>Género</strong>: </li>
-        <li><strong>Reparto</strong>:  </li>
         </ul>
         </div>
         
