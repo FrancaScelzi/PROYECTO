@@ -13,11 +13,11 @@ fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=50a53e8e9d1beeefe2
         if (index <18) {
 
         generos += 
-        `<div class="polaroid">
+        ` <div class="polaroid">
+        <a href="detailGeneros.html?id=${genero.id}>
         <p class= " titulospolaroid"> ${genero.name} </p>
         <div class="subtitulospolaroid">
-        </div>
-        </div>`
+        </a>`
         }
 
 

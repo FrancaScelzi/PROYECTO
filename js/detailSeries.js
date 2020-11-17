@@ -14,7 +14,7 @@ let url = `https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`
 
 let containerDeatil = document.querySelector ('main');
 
-fetch (`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`)
+fetch (url)
 .then (datos=>datos.json() )
 .then (respuesta => {
     console.log (respuesta);
