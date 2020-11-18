@@ -43,7 +43,7 @@ body {
     width: 22%;
     }
 
-.contenido {
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2%;
@@ -127,7 +127,8 @@ a.eye {
         margin: 1%;
         margin-bottom: 2.5%;
     }
-.contenido {
+
+main {
         grid-template-columns: repeat(5, 1fr);
         
     }

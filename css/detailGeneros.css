@@ -30,6 +30,11 @@ body {
 .fotoeye {
     width: 22%;
 }
+
+.fotoeye:hover {
+    opacity:50%;
+}
+
 .botonhome {
     text-align: right;
     color: #A6A292;
@@ -38,6 +43,11 @@ body {
     font-family: 'Arapey', serif;
     margin: 3%;
   
+}
+
+.botonhome:hover {
+    opacity:50%;
+
 }
 
 .title {
@@ -79,18 +89,32 @@ body {
 .polaroid {
     background-color: white;
     display: grid;  
+    border-radius: 15px;
+}
+
+.polaroid:hover {
+    opacity: 50%;
 }
 
 .imagen {
     justify-self: center;
     width: 95%;
     padding: 2%;
+    border-radius:15px ;
 }
+
 .textopolaroid {
     font-family: 'Arapey', serif;
     font-size: 20px;
     margin-bottom: 10px;
     margin-left: 10px;
+    text-decoration-line: none ;
+}
+
+.textopolaroid:hover {
+    text-decoration:none;
+    text-decoration-line: none;
+    opacity: 50%;
 }
 
 .textopolaroidtitulo{
@@ -99,11 +123,15 @@ body {
     color: black;
 }
 
+
+
 .textopolaroidaño{
     margin: 0px;
-    text-decoration: none;
+    text-decoration-line: none;
     color: black;
 }
+
+
 
 /* Tablet */
 @media (min-width:576px) {

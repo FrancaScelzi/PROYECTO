@@ -26,10 +26,19 @@ body {
     font-size: 30px;
 }
 
+.searchfield:hover {
+    opacity: 50%;
+
+}
+
 .searchbutton {
     background-color: #D5B6A3;
     border: 0px;
     width: 30px;
+}
+
+.searchbutton:hover {
+    opacity: 50%;
 }
 
 input, select, textarea{
@@ -57,6 +66,9 @@ input, select, textarea{
     width: 34%;
 }
 
+.fotoeye:hover {
+    opacity: 50%;
+}
 .botongeneros {
     text-align: right;
     color: #A6A292;
@@ -64,6 +76,12 @@ input, select, textarea{
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 3%;
+}
+
+.botongeneros:hover {
+    text-decoration-line: none;
+    color:  #A6A292 ;
+    opacity: 50%;
 }
 
 #carouselExampleIndicators {
@@ -123,12 +141,20 @@ section.toprated {
     background-size: cover;
     display: grid;
     gap: 10px;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
 }
 
+.polaroid:hover {
+    opacity: 60%;
+}
 
 .imagen {
     width: 100%;
     padding: 2%;
+    border-radius: 15px;
+    
     
 }
 

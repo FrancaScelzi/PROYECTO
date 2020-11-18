@@ -41,6 +41,12 @@ body {
     margin: 3%;
     
 }
+
+.botongeneros:hover {
+    opacity:50%;
+
+}
+
 .eye {
     margin: 3%;
     margin-left: 3%;
@@ -48,6 +54,11 @@ body {
 .fotoeye {
     width: 22%;
     }
+
+.fotoeye:hover {
+    opacity:50%;
+
+}
 
 /*Main*/
 .contenido {

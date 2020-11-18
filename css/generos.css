@@ -31,6 +31,11 @@ body {
 .fotoeye {
     width: 22%;
 }
+
+.fotoeye:hover {
+    opacity:50%;
+
+}
 .botonhome {
     text-align: right;
     color: #A6A292;
@@ -39,6 +44,11 @@ body {
     font-family: 'Arapey', serif;
     margin: 3%;
   
+}
+
+.botonhome:hover {
+    opacity:50%;
+
 }
 
 .title {
@@ -64,6 +74,11 @@ body {
     display: grid;
     gap: 2px;
     background-color: white;
+    
+}
+
+.polaroid:hover {
+    opacity: 50%;
 }
 
 a.genero {
