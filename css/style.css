@@ -8,6 +8,8 @@ body {
     background-color: black;
 }
 
+
+
 /*Buscador*/
 
 .buscador {
@@ -15,10 +17,9 @@ body {
     display: grid;
     justify-content: center;
     padding: 10px;
-    font-family: 'Arapey', serif;
-    
-    
+    font-family: 'Arapey', serif;    
 }
+
 .searchfield {
     background-color: black;
     text-decoration-color: blanchedalmond;

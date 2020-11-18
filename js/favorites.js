@@ -8,6 +8,9 @@ const idFavoritos = window.localStorage.getItem ('favoritos')
 fetch ('https://api.themoviedb.org/3/movie/${idFavoritos}?api_key=${apiKey}')
 
 .then (datos=>datos.json())
+let spinner = document.querySelector ('.loader')
+
+    spinner.style.display= "none"
 .then (respuesta => {
     let movie = 
         `<article>

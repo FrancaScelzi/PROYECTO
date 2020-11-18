@@ -15,6 +15,10 @@ let containerGenres = document.querySelector ('.container');
 fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`)
 .then (datos=>datos.json() )
 .then (respuesta => {
+
+  let spinner = document.querySelector ('.loader')
+
+    spinner.style.display= "none"
     console.log (respuesta);
     let detail = ''
     

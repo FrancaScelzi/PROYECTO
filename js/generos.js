@@ -5,6 +5,11 @@ let containerGeneros = document.querySelector ('.generos')
 fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=50a53e8e9d1beeefe2442f1dbc53288d')
 .then (datos=>datos.json())
 .then (respuesta => {
+
+    let spinner = document.querySelector ('.loader')
+
+    spinner.style.display= "none"
+    
     console.log (respuesta);
     let generos = ''
 

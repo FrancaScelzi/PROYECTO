@@ -17,6 +17,10 @@ let containerDeatil = document.querySelector ('main');
 fetch (url)
 .then (datos=>datos.json() )
 .then (respuesta => {
+
+  let spinner = document.querySelector ('.loader')
+
+    spinner.style.display= "none"
     console.log (respuesta);
     let detail = ''
     
