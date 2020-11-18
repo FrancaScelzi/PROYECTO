@@ -78,13 +78,12 @@ body {
 
 .polaroid {
     background-color: white;
-    background-size: cover;
-    display: grid;
-    gap: 20px;
+    display: grid;  
 }
 
 .imagen {
-    width: 100%;
+    justify-self: center;
+    width: 95%;
     padding: 2%;
 }
 .textopolaroid {
@@ -96,10 +95,14 @@ body {
 
 .textopolaroidtitulo{
     margin: 0px;
+    text-decoration: none;
+    color: black;
 }
 
 .textopolaroidaño{
     margin: 0px;
+    text-decoration: none;
+    color: black;
 }
 
 /* Tablet */
@@ -118,7 +121,7 @@ body {
     
     h1.titlegenero {
         font-size: 80px;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 
     .contenido {

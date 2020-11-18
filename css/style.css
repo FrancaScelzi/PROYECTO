@@ -91,12 +91,19 @@ main {
     margin: 2%;
     gap: 10px;
 }
+section.toprated {
+    margin-bottom: 0px;
 
+}
 .toprated {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2%;
     gap: 10px;
+  
+
+    
+    
 }
 
 .polaroid {
@@ -126,10 +133,14 @@ main {
 
 .textopolaroidtitulo{
     margin: 0px;
+    text-decoration: none;
+    color: black;
 }
 
 .textopolaroidaño{
     margin: 0px;
+    text-decoration: none;
+    color: black;
 }
 
 
