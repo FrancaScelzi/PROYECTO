@@ -16,15 +16,24 @@ body {
     justify-content: center;
     padding: 10px;
     font-family: 'Arapey', serif;
-    border-bottom: 0px;
+    
+    
 }
 .searchfield {
     background-color: black;
-
+    text-decoration-color: blanchedalmond;
+    border: 0px;
+    font-size: 30px;
 }
 
 .searchbutton {
     background-color: #D5B6A3;
+    border: 0px;
+    width: 30px;
+}
+
+input, select, textarea{
+    color:#D5B6A3;
 }
 
 /*Header*/

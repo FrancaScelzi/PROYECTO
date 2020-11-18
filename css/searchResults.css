@@ -43,6 +43,52 @@ body {
     width: 22%;
     }
 
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2%;
+    gap: 10px;
+}
+
+
+.polaroid {
+    background-color: #A6A292;
+    background-image: url(../Images/Logos/img-textura.png);
+    background-size: cover;
+    display: grid;
+    gap: 10px;
+   
+}
+
+
+.imagen {
+    width: 95%;
+    padding: 2%;
+    justify-self: center;
+    
+}
+
+
+.textopolaroid {
+    font-family: 'Arapey', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+
+.textopolaroidtitulo{
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.textopolaroidaño{
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
 
 /*Tablet*/
 @media (min-width:576px) {
@@ -50,14 +96,17 @@ body {
             font-size: 35px;
         
     }
+    .contenido {
+        grid-template-columns: repeat(3, 3fr);
+    }
+
 
 }
     
  /*Desktop*/
  @media (min-width:1024px){
-    
+
 /*Header*/
-    
 .header {
         background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
         background-size: cover;
@@ -78,5 +127,13 @@ a.eye {
         margin: 1%;
         margin-bottom: 2.5%;
     }
+.contenido {
+        grid-template-columns: repeat(5, 1fr);
+        
+    }
+        
+
 
  }
+
+ 
