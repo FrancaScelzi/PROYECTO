@@ -67,12 +67,16 @@ hr {
     margin-right: 2px;
 }
 
+.logotmdb {
+    background-color: black;
+}
 .logoapi {
     display: block;
     margin: auto;
     width: 100px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    background-color: black;
     
 }
 
@@ -83,6 +87,11 @@ hr {
     margin-top: 5px;
 }
 
+.namescontainer {
+    padding: 5px;
+    background-color: black;
+}
+
 .names {
     color:  rgb(161, 160, 160);
     width: 100%;
@@ -91,6 +100,7 @@ hr {
     font-size: 10px;
     align-content: center;
     margin: 0%;
+    background-color: black;
 }
 
 

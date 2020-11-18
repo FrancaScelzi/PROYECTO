@@ -1,0 +1,82 @@
+/* Mobile */
+
+/*Header*/
+
+body {
+    background-color: black;
+}
+
+.header {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:1%;
+    align-items: center;
+} 
+
+.eye {
+    margin: 3%;
+    margin-left: 3%;
+}
+
+
+.botongeneros {
+    text-align: right;
+    color: #A6A292;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 3%;
+    
+}
+.eye {
+    margin: 3%;
+    margin-left: 3%;
+}
+.fotoeye {
+    width: 22%;
+    }
+
+
+/*Tablet*/
+@media (min-width:576px) {
+    .botongeneros {
+            font-size: 35px;
+        
+    }
+
+}
+    
+ /*Desktop*/
+ @media (min-width:1024px){
+    
+/*Header*/
+    
+.header {
+        background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
+        background-size: cover;
+    }
+    
+    
+a.eye {
+        margin: 1%;
+        margin-left: 1%;
+        width: 50%;
+        margin-bottom: 2.5%;
+        
+    }
+    
+    
+ .botongeneros {
+        font-size: 40px;
+        margin: 1%;
+        margin-bottom: 2.5%;
+    }
+
+ }

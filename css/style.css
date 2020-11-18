@@ -13,8 +13,10 @@ body {
 .buscador {
     background-color: black;
     display: grid;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 10px;
+    font-family: 'Arapey', serif;
+    border-bottom: 0px;
 }
 .searchfield {
     background-color: black;
@@ -34,7 +36,7 @@ body {
 
 .portada {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding:1%;
 }
@@ -43,7 +45,7 @@ body {
 }
 
 .fotoeye {
-    width: 22%;
+    width: 34%;
 }
 
 .botongeneros {
