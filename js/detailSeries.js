@@ -33,7 +33,7 @@ fetch (url)
         <ul class="informacion"> 
       
         <li><strong>Date</strong>: ${respuesta.last_air_date} </li>
-        <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
+        <li><strong>Género</strong>: <a href="detailGeneros.html"?id=${respuesta.genres[0].id}> ${respuesta.genres[0].name} </a></li> 
         
         </ul>
         </div>
