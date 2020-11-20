@@ -39,13 +39,14 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
             <div>
                 <h3 class="titulo">${respuesta.title}</h3>
                 <p class="trama"> ${respuesta.overview}</p>
+                <button class="button"> 
+                <img src="./Images/Logos/img-favorite.png" alt="fav">    
+                </button>
                 <ul class="informacion"> 
                     <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
                     <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
                     <li class="reviews"><strong>Reviews</strong>: </li>
-                    <li><button class="botonfavoritos"> 
-                    ★
-                    </button></li>
+                    <li></li>
                  </ul>
             </div>
             
@@ -56,19 +57,29 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 
     containerDeatil.innerHTML = detail
 
-    let boton = document.querySelector ('.botonfavoritos')
+    let boton = document.querySelector ('.button')
 
-    boton.addEventListener ('click', function (evento) {
+    boton.addEventListener ('click', function () {
+      let storage = localStorage.getItem('favoritos')
+      let storageJs = JSON.parse(storage)
 
-       let storageJs = JSON.parse(localStorage.getItem ('favoritos'))
-       console.log (storageJs)
+     
+       if(!storageJs.includes(id)) {
+       storageJs.push(id)
+     
+       }else{
+         storageJs = storageJs.filter(function (movie){
+           return movie != id 
+         })
+       }
 
-       storageJs.push (id)
-
-
-       localStorage.setItem ('favoritos', JSON.stringify (storageJs))
-
+       localStorage.setItem ('favoritos', JSON.stringify(storageJs))  
     }) 
+
+
+
+
+    // reviews
 
     fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}`)
       .then(datos => datos.json())
@@ -79,13 +90,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
         let containerReviews = document.querySelector ('.reviews')
 
         let resultados = respuesta.results;
-
-    
-
           
           respuesta.results.forEach(index => {
-
-         
               
               let content = index.content ;
               
@@ -94,24 +100,13 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
                 content = reviewPart + '...';
               }
               
-              
               containerReviews.innerHTML += `${content} `
-            
             
             
           });
         
         
-        
-
-        
-
       })
-
-
-
-      
-
 
 
   })

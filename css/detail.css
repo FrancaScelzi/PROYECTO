@@ -109,7 +109,8 @@ h3.titulo {
 
 .botonfavoritos {
     display: grid;
-
+    margin-left: 1%;
+    margin-top: 5%;
 }
 /* 
 .paleta { 
