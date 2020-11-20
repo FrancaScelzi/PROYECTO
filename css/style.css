@@ -101,6 +101,9 @@ h3 {
 main {
     background-color: black;
 }
+a,a:hover {
+    text-decoration: none;
+}
 
 .palabra {
     color:#D5B6A3;

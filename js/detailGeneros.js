@@ -8,25 +8,95 @@ console.log (id)
 
 let apiKey = "50a53e8e9d1beeefe2442f1dbc53288d"; 
 
-let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`
+let genres = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`
 
 let containerGenres = document.querySelector ('.container');
 
-fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`)
+
+fetch (genres)
 .then (datos=>datos.json() )
 .then (respuesta => {
+  console.log(respuesta);
 
   let spinner = document.querySelector ('.loader')
+  spinner.style.display= "none";
 
-    spinner.style.display= "none"
-    console.log (respuesta);
-    let detail = ''
-    
-        detail += 
-      
-      
-      
+  let genreTitle = document.querySelector('.titlegenero');
+  
 
-      containerGenres.innerHTML= detail
+  for (let i=0; i<respuesta.genres.length; i++){
+    console.log(id);
+    console.log(respuesta.genres[i].id);
+    if(id == respuesta.genres[i].id){
+      
+      genreTitle.innerText = respuesta.genres[i].name
+    }    
+  }
+})
+
+let contenidoMovies = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false`
+
+let containerMovies = document.querySelector ('.contenidomovies');
+
+fetch (contenidoMovies)
+.then (datos => datos.json() )
+.then (respuesta => {
+  console.log (respuesta);
+let movies = ""
+  let spinner = document.querySelector ('.loader')
+  spinner.style.display= "none";
+
+respuesta.results.forEach((pelicula,index) =>{
+  if(index<10){
+    movies +=
+    `
+    <a href="detailFilms.html?id=${pelicula.id}" class= "polaroid" >
+     
+        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"> 
         
-    })
+        <div class = "textopolaroid"> 
+          <p class= "textopolaroidtitulo"> ${pelicula.title}</p> 
+          <p class = "textopolaroidaño"> ${pelicula.release_date}</p>
+        </div>
+          
+      </a> 
+      `
+
+  }
+})
+containerMovies.innerHTML = movies
+})
+ 
+
+let contenidoTv = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false`
+
+let containerTv = document.querySelector ('.contenidotv');
+
+fetch (contenidoTv)
+.then (datos => datos.json() )
+.then (respuesta => {
+  console.log (respuesta);
+let series = ""
+  let spinner = document.querySelector ('.loader')
+  spinner.style.display= "none";
+
+respuesta.results.forEach((serie,index) =>{
+  if(index<10){
+    series +=
+    `
+    <a href="detailSeries.html?id=${serie.id}" class= "polaroid" >
+     
+        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${serie.poster_path}"> 
+        
+        <div class = "textopolaroid"> 
+          <p class= "textopolaroidtitulo"> ${serie.name}</p> 
+          <p class = "textopolaroidaño"> ${serie.first_air_date}</p>
+        </div>
+          
+      </a> 
+      `
+
+  }
+})
+containerTv.innerHTML = series
+})

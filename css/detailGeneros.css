@@ -61,6 +61,7 @@ h1.titlegenero {
     font-size: 30px;
     margin: 80px;
     margin-bottom: 100px;
+    text-transform: uppercase;
 
 }
 
@@ -78,18 +79,33 @@ body {
     color: white;
 }
 
-.contenido {
+.contenidomovies, .contenidotv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2%;
     gap: 10px;
 }
+h3 {
+    margin: 5px;
+    margin-top: 10px;
+    
+}
+.palabra {
+    color:#D5B6A3;
+    font-family: 'Arapey', serif;
+    font-size: 20px;
 
+}
 
 .polaroid {
-    background-color: white;
-    display: grid;  
+    background-color:#D5B6A3;
+    background-image: url(../Images/Logos/img-textura.png);
+    background-size: cover;
+    display: grid;
+    gap: 10px;
     border-radius: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 .polaroid:hover {
@@ -102,7 +118,8 @@ body {
     padding: 2%;
     border-radius:15px ;
 }
-
+a, a:hover { text-decoration: none;
+}
 .textopolaroid {
     font-family: 'Arapey', serif;
     font-size: 20px;
@@ -138,7 +155,7 @@ body {
     .botonhome {
         font-size: 35px;
     }
-    .contenido {
+    .contenidomovies, .contenidotv {
         grid-template-columns: repeat(2, 1fr);
 }
 }
@@ -152,7 +169,7 @@ body {
         margin-bottom: 200px;
     }
 
-    .contenido {
+    .contenidomovies, .contenidotv {
         grid-template-columns: repeat(5,1fr);
     }
 
