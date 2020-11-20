@@ -79,6 +79,15 @@ body {
     display: none;
 } */
 
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity:50%
+}
+
 h3.titulo {
     font-family: 'Arapey', serif;
     color:black;
@@ -95,8 +104,12 @@ h3.titulo {
     font-size:15px;
     margin: 1%;
     margin-top:5%;
+   
+}
 
-    
+.botonfavoritos {
+    display: grid;
+
 }
 /* 
 .paleta { 

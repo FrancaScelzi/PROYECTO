@@ -5,7 +5,7 @@ let containerFavoritos = document.querySelector ('.favoritos')
 
 const idFavoritos = window.localStorage.getItem ('favoritos')
     
-fetch ('https://api.themoviedb.org/3/movie/${idFavoritos}?api_key=${apiKey}')
+fetch (`https://api.themoviedb.org/3/movie/id=${idFavoritos}?api_key=${apiKey}`)
 
 .then (datos=>datos.json())
 let spinner = document.querySelector ('.loader')

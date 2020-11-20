@@ -6,16 +6,14 @@ fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=50a53e8e9d1beeefe2
 .then (datos=>datos.json())
 .then (respuesta => {
 
-    let spinner = document.querySelector ('.loader')
-
-    spinner.style.display= "none"
+   
     
     console.log (respuesta);
     let generos = ''
 
     respuesta.genres.forEach ((genero, index) => {
         
-        if (index <18) {
+       
 
         generos += 
         `<div class="polaroid">
@@ -23,8 +21,7 @@ fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=50a53e8e9d1beeefe2
         <p class= " titulospolaroid"> ${genero.name} </p>
         </a>
         </div>`
-        }
-
+        
 
     });
 

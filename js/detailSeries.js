@@ -18,9 +18,7 @@ fetch (url)
 .then (datos=>datos.json() )
 .then (respuesta => {
 
-  let spinner = document.querySelector ('.loader')
-
-    spinner.style.display= "none"
+  
     console.log (respuesta);
     let detail = ''
     
@@ -33,7 +31,7 @@ fetch (url)
         <ul class="informacion"> 
       
         <li><strong>Date</strong>: ${respuesta.last_air_date} </li>
-        <li><strong>Género</strong>: <a href="detailGeneros.html"?id=${respuesta.genres[0].id}> ${respuesta.genres[0].name} </a></li> 
+        <li><strong>Género</strong>: <a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li> 
         
         </ul>
         </div>

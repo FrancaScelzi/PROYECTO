@@ -18,8 +18,7 @@ fetch (genres)
 .then (respuesta => {
   console.log(respuesta);
 
-  let spinner = document.querySelector ('.loader')
-  spinner.style.display= "none";
+  
 
   let genreTitle = document.querySelector('.titlegenero');
   
@@ -43,8 +42,7 @@ fetch (contenidoMovies)
 .then (respuesta => {
   console.log (respuesta);
 let movies = ""
-  let spinner = document.querySelector ('.loader')
-  spinner.style.display= "none";
+
 
 respuesta.results.forEach((pelicula,index) =>{
   if(index<10){
@@ -77,8 +75,7 @@ fetch (contenidoTv)
 .then (respuesta => {
   console.log (respuesta);
 let series = ""
-  let spinner = document.querySelector ('.loader')
-  spinner.style.display= "none";
+ 
 
 respuesta.results.forEach((serie,index) =>{
   if(index<10){

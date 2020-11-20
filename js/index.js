@@ -10,9 +10,7 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
 .then (datos=>datos.json() )
 .then (respuesta => {
 
-    let spinner = document.querySelector ('.loader')
-
-    spinner.style.display= "none"
+   
     console.log (respuesta);
     let movies = ''
 

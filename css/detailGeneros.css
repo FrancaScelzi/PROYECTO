@@ -64,6 +64,10 @@ h1.titlegenero {
     text-transform: uppercase;
 
 }
+.espacio {
+    display: block;
+    height: 2em;
+}
 
 
 /* Main */
@@ -85,11 +89,14 @@ body {
     margin: 2%;
     gap: 10px;
 }
+
 h3 {
     margin: 5px;
-    margin-top: 10px;
+    margin-left: 2%
     
 }
+
+
 .palabra {
     color:#D5B6A3;
     font-family: 'Arapey', serif;
@@ -118,7 +125,9 @@ h3 {
     padding: 2%;
     border-radius:15px ;
 }
-a, a:hover { text-decoration: none;
+
+a, a:hover { 
+    text-decoration: none;
 }
 .textopolaroid {
     font-family: 'Arapey', serif;

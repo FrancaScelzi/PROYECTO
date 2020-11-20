@@ -8,6 +8,16 @@ console.log(queryObject);
 let id = queryObject.get('id');
 console.log(id)
 
+let storage = localStorage.getItem ('favoritos')
+
+console.log (storage)
+
+if (storage == null) {
+  localStorage.setItem ('favoritos', '[]')
+}
+
+
+
 let apiKey = "50a53e8e9d1beeefe2442f1dbc53288d";
 
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
@@ -18,33 +28,47 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
   .then(datos => datos.json())
   .then(respuesta => {
 
-    let spinner = document.querySelector ('.loader')
-
-    spinner.style.display= "none"
+    
     
     console.log(respuesta);
     let detail = ''
 
     detail +=
       `<div class="contenido">
-        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${respuesta.poster_path}" alt="">
-        <div>
-        <h3 class="titulo">${respuesta.title}</h3>
-        <p class="trama"> ${respuesta.overview}</p>
-        <ul class="informacion"> 
-        
-        
-        <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
-        <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
-        <li class="reviews"><strong>Reviews</strong>: </li>
-        </ul>
-        </div>
-        
+                <img class="imagen" src="https://image.tmdb.org/t/p/w500/${respuesta.poster_path}" alt="">
+            <div>
+                <h3 class="titulo">${respuesta.title}</h3>
+                <p class="trama"> ${respuesta.overview}</p>
+                <ul class="informacion"> 
+                    <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
+                    <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
+                    <li class="reviews"><strong>Reviews</strong>: </li>
+                    <li><button class="botonfavoritos"> 
+                    ★
+                    </button></li>
+                 </ul>
+            </div>
+            
+           
         </div>`
 
 
 
     containerDeatil.innerHTML = detail
+
+    let boton = document.querySelector ('.botonfavoritos')
+
+    boton.addEventListener ('click', function (evento) {
+
+       let storageJs = JSON.parse(localStorage.getItem ('favoritos'))
+       console.log (storageJs)
+
+       storageJs.push (id)
+
+
+       localStorage.setItem ('favoritos', JSON.stringify (storageJs))
+
+    }) 
 
     fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}`)
       .then(datos => datos.json())
@@ -65,8 +89,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
               
               let content = index.content ;
               
-              if (content.length > 300) {
-                let reviewPart = content.slice(0,300);
+              if (content.length > 470) {
+                let reviewPart = content.slice(0,470);
                 content = reviewPart + '...';
               }
               
