@@ -72,7 +72,7 @@ h3 {
     margin: 2%;
 }
 
-.favoritos {
+.favsmovies , .favsseries {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2%;
@@ -136,7 +136,7 @@ h3 {
         
     }
 
-    .favoritos {
+    .favsmovies ,.favsseries{
         grid-template-columns: repeat(3,1fr);
     }
 }
@@ -166,7 +166,7 @@ h3 {
         margin-top: 4%;
     }
     
-    .favoritos {
+    .favsmovies , .favsseries{
         grid-template-columns: repeat(6,1fr);
     }
 }

@@ -198,6 +198,7 @@ a,a:hover {
         font-size: 35px;
     }   
 
+   
     .peliculaspopulares {
         grid-template-columns: repeat(3,1fr);
     }
@@ -209,6 +210,7 @@ a,a:hover {
     .toprated {
         grid-template-columns: repeat(3,1fr);
     }
+
 }
 
 /* Desktop */

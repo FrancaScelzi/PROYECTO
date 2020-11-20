@@ -67,9 +67,13 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
        if(!storageJs.includes(id)) {
        storageJs.push(id)
      
-       }else{
+       }
+       
+       else{
          storageJs = storageJs.filter(function (movie){
            return movie != id 
+
+           
          })
        }
 
@@ -79,7 +83,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 
 
 
-    // reviews
+    // Reviews
 
     fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}`)
       .then(datos => datos.json())

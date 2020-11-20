@@ -72,6 +72,7 @@ body {
     width: 90%;
     justify-content: center;
     height: inherit;
+    width: 100%;
 
 }
 
@@ -107,10 +108,19 @@ h3.titulo {
    
 }
 
-.botonfavoritos {
-    display: grid;
+button {
+    display: inline-block;
     margin-left: 1%;
-    margin-top: 5%;
+    margin-top: 10%;
+    background-color: transparent;
+    border:none;
+    width: 80px;
+}
+
+button:hover {
+    opacity:50%;
+    decoration
+    
 }
 /* 
 .paleta { 

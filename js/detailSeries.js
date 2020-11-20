@@ -8,6 +8,14 @@ console.log (queryObject);
 let id = queryObject.get('id');
 console.log (id)
 
+let storage = localStorage.getItem ('favoritos')
+
+console.log (storage)
+
+if (storage == null) {
+  localStorage.setItem ('favoritos', '[]')
+}
+
 let apiKey = "50a53e8e9d1beeefe2442f1dbc53288d";
 
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`
@@ -24,17 +32,21 @@ fetch (url)
     
         detail += 
         `<div class="contenido">
-        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${respuesta.poster_path}" alt="">
-        <div>
-        <h3 class="titulo">${respuesta.name}</h3>
-        <p class="trama"> ${respuesta.overview}</p>
-        <ul class="informacion"> 
+                <img class="imagen" src="https://image.tmdb.org/t/p/w500/${respuesta.poster_path}" alt="">
+                <div>
+                    <h3 class="titulo">${respuesta.name}</h3>
+                    <p class="trama"> ${respuesta.overview}</p>
+                    <button class="button"> 
+                        <img src="./Images/Logos/img-favorite.png" alt="fav">    
+                    </button>
+       
+                    <ul class="informacion"> 
       
-        <li><strong>Date</strong>: ${respuesta.last_air_date} </li>
-        <li><strong>Género</strong>: <a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li> 
+                        <li><strong>Date</strong>: ${respuesta.last_air_date} </li>
+                        <li><strong>Género</strong>: <a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li> 
         
-        </ul>
-        </div>
+                    </ul>
+                </div>
         
         </div>`
       
@@ -42,6 +54,28 @@ fetch (url)
 
       containerDeatil.innerHTML= detail
         
+      let boton = document.querySelector ('.button')
+
+      boton.addEventListener ('click', function () {
+        let storage = localStorage.getItem ('favoritos')
+        let storageJs = JSON.parse (storage)
+
+
+        if (!storageJs.includes(id)){
+          storageJs.push(id)
+        }
+
+        else {
+          storageJs = storageJs.filter (function (serie) {
+            return serie != id
+          })
+        }
+
+        localStorage.setItem ('favoritos', JSON.stringify(storageJs))
+        
+      })
+
+
     })
 
 
