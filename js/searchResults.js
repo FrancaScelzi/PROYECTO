@@ -12,7 +12,8 @@ let apiKey = "50a53e8e9d1beeefe2442f1dbc53288d";
 
 let url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false`
 
-let containerResults = document.querySelector ('main');
+let containerResults = document.querySelector ('.resultados');
+let searchTitle = document.querySelector ('.searchTitle')
 
 fetch (url)
 .then (datos=>datos.json() )
@@ -25,21 +26,22 @@ fetch (url)
     let results = ''
 
 
-     respuesta.results.forEach ((multi, index) => {
-       if (multi.media_type == "tv"){
-         results += 
-         ` <section>
-         <a href="detailSeries.html?id=${multi.id}"> 
-           <article class= "polaroid" > 
-               <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
-               <div class = "textopolaroid"> 
-                   <p class= "textopolaroidtitulo"> ${multi.name}</p> 
-                   <p class = "textopolaroidaño"> ${multi.first_air_date} </p>
-                </div>
-            </article>
+    
+    respuesta.results.forEach ((multi, index) => {
+      if (multi.media_type == "tv"){
+        results += 
+        ` <section>
+        <a href="detailSeries.html?id=${multi.id}"> 
+        <article class= "polaroid" > 
+        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
+        <div class = "textopolaroid"> 
+        <p class= "textopolaroidtitulo"> ${multi.name}</p> 
+        <p class = "textopolaroidaño"> ${multi.first_air_date} </p>
+        </div>
+        </article>
         </a>
        </section>` 
-
+       
        containerResults.innerHTML= results
       
       }
@@ -47,23 +49,24 @@ fetch (url)
       else if (multi.media_type == "movie"){
         results +=
         ` <section>
-         <a href="detailFilms.html?id=${multi.id}"> 
-           <article class= "polaroid" > 
-               <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
-               <div class = "textopolaroid"> 
+        <a class="apolaroid" href="detailFilms.html?id=${multi.id}"> 
+        <article class= "polaroid" > 
+        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
+        <div class = "textopolaroid"> 
                    <p class= "textopolaroidtitulo"> ${multi.title}</p> 
                    <p class = "textopolaroidaño"> ${multi.release_date} </p>
-                </div>
+                   </div>
             </article>
-        </a>
-       </section>` 
+            </a>
+            </section>` 
 
-       containerResults.innerHTML= results
-      }
-
-      
-       })
-
-    // .catch(error => console.error (error))
-      
+            containerResults.innerHTML= results
+          }
+          
+          searchTitle.innerHTML += `${search}`
+          
+        })
+        
+        // .catch(error => console.error (error))
+        
       })

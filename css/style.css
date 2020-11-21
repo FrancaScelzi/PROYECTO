@@ -135,6 +135,13 @@ section.toprated {
  
 }
 
+ a.apolaroid:hover {
+    opacity: 50%;
+    text-decoration: none;
+
+
+}
+
 .polaroid {
     background-color: #D5B6A3;
     background-image: url(../Images/Logos/img-textura.png);

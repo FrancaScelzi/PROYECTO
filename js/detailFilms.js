@@ -44,7 +44,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
                 </button>
                 <ul class="informacion"> 
                     <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
-                    <li><strong>Género</strong>: ${respuesta.genres[0].name} </li>
+                    <li><strong>Género</strong>:<a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li>
                     <li class="reviews"><strong>Reviews</strong>: </li>
                     <li></li>
                  </ul>

@@ -35,19 +35,44 @@ body {
     margin: 3%;
     
 }
+
 .eye {
     margin: 3%;
     margin-left: 3%;
 }
+
+
 .fotoeye {
     width: 22%;
     }
 
-main {
+.fotoeye:hover, .botongeneros:hover {
+    opacity: 50%;
+}
+
+h3.searchTtile {
+    margin:5px;
+}
+
+.palabra {
+        color:#D5B6A3;
+        font-family: 'Arapey', serif;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+.resultados {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2%;
     gap: 10px;
+}
+
+a.apolaroid, a.apolaroid:hover {
+    opacity: 50%;
+    text-decoration: none;
+
+
 }
 
 
@@ -104,7 +129,7 @@ main {
             font-size: 35px;
         
     }
-    .contenido {
+    .resultados {
         grid-template-columns: repeat(3, 3fr);
     }
 
@@ -136,7 +161,7 @@ a.eye {
         margin-bottom: 2.5%;
     }
 
-main {
+.resultados {
         grid-template-columns: repeat(5, 1fr);
         
     }

@@ -16,6 +16,10 @@ hr {
     padding-top: 20px;
    
 }
+
+a, a:hover {
+    text-decoration: none;
+}
  
 .terminos{
     display: flex;
