@@ -47,12 +47,9 @@ body {
 
 }
 
-.eye {
-    margin: 3%;
-    margin-left: 3%;
-}
+
 .fotoeye {
-    width: 22%;
+    width: 30%;
     }
 
 .fotoeye:hover {
@@ -119,9 +116,9 @@ button {
 
 button:hover {
     opacity:50%;
-    decoration
-    
+    text-decoration: none;
 }
+    
 /* 
 .paleta { 
     display: none;

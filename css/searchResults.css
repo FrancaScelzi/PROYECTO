@@ -4,6 +4,7 @@
 
 body {
     background-color: black;
+
 }
 
 .header {
@@ -19,6 +20,7 @@ body {
     padding:1%;
     align-items: center;
 } 
+
 
 .eye {
     margin: 3%;
@@ -43,7 +45,7 @@ body {
 
 
 .fotoeye {
-    width: 22%;
+    width: 35%;
     }
 
 .fotoeye:hover, .botongeneros:hover {
@@ -75,6 +77,14 @@ a.apolaroid, a.apolaroid:hover {
 
 }
 
+.loader {
+  position: unset;
+  margin-left: 45%;
+  margin-right: 50%;
+  margin-bottom: 30px;
+    
+
+}
 
 .polaroid {
     background-color: #A6A292;

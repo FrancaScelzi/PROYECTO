@@ -9,7 +9,6 @@ body {
 }
 
 
-
 /*Buscador*/
 
 .buscador {
@@ -24,7 +23,7 @@ body {
     background-color: black;
     text-decoration-color: blanchedalmond;
     border: 0px;
-    font-size: 30px;
+    
 }
 
 .searchfield:hover {
@@ -204,7 +203,9 @@ a,a:hover {
     .botongeneros {
         font-size: 35px;
     }   
-
+.searchfield {
+    font-size: 30px;
+}
    
     .peliculaspopulares {
         grid-template-columns: repeat(3,1fr);

@@ -63,7 +63,10 @@ fetch (url)
             containerResults.innerHTML= results
           }
           
-          searchTitle.innerHTML += `${search}`
+          searchTitle.innerHTML = search
+         
+
+          
           
         })
         
