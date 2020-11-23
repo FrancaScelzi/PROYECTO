@@ -94,13 +94,13 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
         let containerReviews = document.querySelector ('.reviews')
 
         let resultados = respuesta.results;
-          
+        
           respuesta.results.forEach(index => {
               
               let content = index.content ;
               
-              if (content.length > 470) {
-                let reviewPart = content.slice(0,470);
+              if (content.length > 1) {
+                let reviewPart = content.slice(0,30);
                 content = reviewPart + '...';
               }
               
