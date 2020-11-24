@@ -63,10 +63,26 @@ fetch (url)
             containerResults.innerHTML= results
           }
           
-          searchTitle.innerHTML = search
-         
+          else if (multi.media_type == "person"){
+            
+            results += `<section>
+        <a class="apolaroid" href=""> 
+        <article class= "polaroid" > 
+        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.profile_path}"> 
+        <div class = "textopolaroid"> 
+                   <p class= "textopolaroidtitulo"> ${multi.name}</p> 
+                   <p class = "textopolaroidaño"> ${multi.popularity} </p>
+                   </div>
+            </article>
+            </a>
+            </section>`
+            
+            containerResults.innerHTML = results
+          }
 
-          
+
+          searchTitle.innerHTML = search
+ 
           
         })
         

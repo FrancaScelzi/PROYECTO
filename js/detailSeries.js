@@ -8,12 +8,12 @@ console.log (queryObject);
 let id = queryObject.get('id');
 console.log (id)
 
-let storage = localStorage.getItem ('favoritos')
+let storage = localStorage.getItem ('SerieFavs')
 
 console.log (storage)
 
 if (storage == null) {
-  localStorage.setItem ('favoritos', '[]')
+  localStorage.setItem ('SerieFavs', '[]')
 }
 
 let apiKey = "50a53e8e9d1beeefe2442f1dbc53288d";
@@ -52,11 +52,13 @@ fetch (url)
       
 
       containerDeatil.innerHTML= detail
+
+      // Favoritos
         
       let boton = document.querySelector ('.button')
 
       boton.addEventListener ('click', function () {
-        let storage = localStorage.getItem ('favoritos')
+        let storage = localStorage.getItem ('SerieFavs')
         let storageJs = JSON.parse (storage)
 
 
@@ -70,7 +72,7 @@ fetch (url)
           })
         }
 
-        localStorage.setItem ('favoritos', JSON.stringify(storageJs))
+        localStorage.setItem ('SerieFavs', JSON.stringify(storageJs))
         
       })
 

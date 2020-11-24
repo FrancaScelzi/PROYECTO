@@ -6,6 +6,10 @@ body {
     background-color: black;
 }
 
+main {
+    min-height: 400px;
+}
+
 .header {
     background-color: black;
     background-size: 100%;

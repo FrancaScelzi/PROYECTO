@@ -8,12 +8,12 @@ console.log(queryObject);
 let id = queryObject.get('id');
 console.log(id)
 
-let storage = localStorage.getItem ('favoritos')
+let storage = localStorage.getItem ('MovieFavs')
 
 console.log (storage)
 
 if (storage == null) {
-  localStorage.setItem ('favoritos', '[]')
+  localStorage.setItem ('MovieFavs', '[]')
 }
 
 
@@ -51,11 +51,12 @@ fetch(url)
 
 
     containerDeatil.innerHTML = detail
-      //Favoritos
+
+     //Favoritos
     let boton = document.querySelector ('.button')
 
     boton.addEventListener ('click', function () {
-      let storage = localStorage.getItem('favoritos')
+      let storage = localStorage.getItem('MovieFavs')
       let storageJs = JSON.parse(storage)
 
      
@@ -72,7 +73,7 @@ fetch(url)
          })
        }
 
-       localStorage.setItem ('favoritos', JSON.stringify(storageJs))  
+       localStorage.setItem ('MovieFavs', JSON.stringify(storageJs))  
     }) 
 
 
