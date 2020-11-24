@@ -1,6 +1,6 @@
 // JS Favoritos
  
-const storage = localStorage.getItem ('.favoritos')
+const storage = localStorage.getItem ('favoritos')
  console.log (storage);
 
  if (storage==null){
@@ -17,7 +17,7 @@ let movies = ''
 const idFavoritos = window.localStorage.getItem ('favoritos')
 
 storageJs.forEach( idFavoritos => {
-    
+
 fetch (`https://api.themoviedb.org/3/movie/id=${idFavoritos}?api_key=${apiKey}`)
 
 .then (datos=>datos.json())
@@ -34,7 +34,7 @@ fetch (`https://api.themoviedb.org/3/movie/id=${idFavoritos}?api_key=${apiKey}`)
         </div>
     </article>
 </a>`
-        
+         console.log (respuesta)
 
     containerFavsMovies.innerHTML = movie;
 })
