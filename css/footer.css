@@ -4,8 +4,6 @@
 hr { 
     margin: 0px;
     background-color: black;
-    
-
 }
 
 .footer { 
@@ -14,12 +12,10 @@ hr {
     grid-template-columns: repeat(1 , 1fr);
     height: 8em;
     padding-top: 20px;
-   
 }
 
 a, a:hover {
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
  
 .terminos{
@@ -42,7 +38,6 @@ a, a:hover {
     padding-left: 2%;
     border-right: solid 1px grey; 
     margin: 0%;
-   
 }
 
 .miniterminosprivacidad { 
@@ -75,6 +70,7 @@ a, a:hover {
 .logotmdb {
     background-color: black;
 }
+
 .logoapi {
     display: block;
     margin: auto;
@@ -82,7 +78,6 @@ a, a:hover {
     margin-top: 5px;
     margin-bottom: 3px;
     background-color: black;
-    
 }
 
 .socialmedia{
@@ -119,7 +114,6 @@ a, a:hover {
  
 .terminos{
         font-size:20px ;
-    
 }
 
 .miniterminos {

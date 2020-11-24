@@ -4,14 +4,12 @@
 
 body {
     background-color: black;
-
 }
 
 .header {
     background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
-    
 }
 
 .portada {
@@ -35,7 +33,6 @@ body {
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 3%;
-    
 }
 
 .eye {
@@ -46,7 +43,7 @@ body {
 
 .fotoeye {
     width: 35%;
-    }
+}
 
 .fotoeye:hover, .botongeneros:hover {
     opacity: 50%;
@@ -61,7 +58,7 @@ h3.searchTtile {
         font-family: 'Arapey', serif;
         font-size: 20px;
         text-transform: uppercase;
-    }
+}
 
 .resultados {
     display: grid;
@@ -73,8 +70,6 @@ h3.searchTtile {
 a.apolaroid, a.apolaroid:hover {
     opacity: 50%;
     text-decoration: none;
-
-
 }
 
 .loader {
@@ -82,8 +77,6 @@ a.apolaroid, a.apolaroid:hover {
   margin-left: 45%;
   margin-right: 50%;
   margin-bottom: 30px;
-    
-
 }
 
 .polaroid {
@@ -94,10 +87,9 @@ a.apolaroid, a.apolaroid:hover {
     gap: 10px;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
-
-   
+    border-radius: 15px;   
 }
+
 .polaroid:hover {
     opacity: 50%;
 }
@@ -107,7 +99,6 @@ a.apolaroid, a.apolaroid:hover {
     padding: 2%;
     justify-self: center;
     border-radius: 15px;
-    
 }
 
 
@@ -118,7 +109,6 @@ a.apolaroid, a.apolaroid:hover {
     margin-left: 10px;
     text-decoration: none;
     outline: none;
-    
 }
 
 .textopolaroidtitulo{
@@ -139,10 +129,10 @@ a.apolaroid, a.apolaroid:hover {
             font-size: 35px;
         
     }
+
     .resultados {
         grid-template-columns: repeat(3, 3fr);
     }
-
 
 }
     
@@ -155,7 +145,7 @@ a.apolaroid, a.apolaroid:hover {
         background-size: cover;
     }
     
-    
+
 a.eye {
         margin: 1%;
         margin-left: 1%;
@@ -163,7 +153,7 @@ a.eye {
         margin-bottom: 2.5%;
         
     }
-    
+
     
  .botongeneros {
         font-size: 40px;
@@ -176,8 +166,6 @@ a.eye {
         
     }
         
-
-
  }
 
  

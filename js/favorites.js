@@ -15,14 +15,16 @@ let storageJs = JSON.parse(storage)
 let movies = ''
 
 const idFavoritos = window.localStorage.getItem ('favoritos')
+const idFavoritosobj = JSON.parse(idFavoritos)
 
 storageJs.forEach( idFavoritos => {
 
-fetch (`https://api.themoviedb.org/3/movie/id=${idFavoritos}?api_key=${apiKey}`)
+    fetch (`https://api.themoviedb.org/3/movie/id=${idFavoritosobj}?api_key=${apiKey}`)
 
 .then (datos=>datos.json())
 
 .then (respuesta => {
+
     let movie = `<a href="detailFilms.html?id=${respuesta.id}">
     <article class= "polaroid" >
         
@@ -39,5 +41,5 @@ fetch (`https://api.themoviedb.org/3/movie/id=${idFavoritos}?api_key=${apiKey}`)
     containerFavsMovies.innerHTML = movie;
 })
 
-.catch (error => console.log (error));
+// .catch (error => console.log (error));
 })

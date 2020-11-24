@@ -16,7 +16,6 @@ body {
     background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
-    
 }
 
 .portada {
@@ -39,22 +38,19 @@ body {
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 3%;
-    
 }
 
 .botongeneros:hover {
     opacity:50%;
-
 }
 
 
 .fotoeye {
     width: 30%;
-    }
+}
 
 .fotoeye:hover {
     opacity:50%;
-
 }
 
 /*Main*/
@@ -70,12 +66,8 @@ body {
     justify-content: center;
     height: inherit;
     width: 100%;
-
 }
 
-/* .imgdesktop {
-    display: none;
-} */
 
 a, a:hover{
     text-decoration: none;
@@ -93,7 +85,6 @@ h3.titulo {
     margin-bottom:3%;
     margin-top: 3%;
     margin: 1%;
-
 }
 
 .trama {
@@ -103,7 +94,6 @@ h3.titulo {
     margin: 1%;
     margin-top:5%;
     margin-bottom: 3%;
-   
 }
 
 .button {
@@ -131,7 +121,6 @@ h3.titulo {
     margin-top: 2%;
 }
     
-
 .informacion {
     line-height: 150%;
     font-family: 'Arapey', serif;
@@ -143,83 +132,13 @@ h3.titulo {
     margin: 1%;
     margin-top:2%;
     margin-bottom: 5%;
-
-}
-
-/* Footer Mobile */
-hr { 
-    margin: 0%;
-}
-
-.footer { 
-    display: grid;
-    grid-template-columns: repeat(1 , 1fr);
-    height: 5em;
-    background-color: black;
-    
-}
- 
-.terminos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0%;
-    margin-top: 2%;
-    padding: 0%;
-    font-size: 12px;
-}
-
-
-.miniterminos {
-    margin: 2%;
-    color:#D5B6A3;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
-    padding-right: 2%;
-    padding-left: 2%;
-    border-right: solid 1px grey; 
-    margin: 0%;
-
-   
-}
-
-.miniterminosprivacidad { 
-    border-right: none;
-    margin: 2%;
-    color: #D5B6A3;
-    text-decoration: none;
-    font-family: 'Arapey', serif;
-    padding-right: 2%;
-    padding-left: 2%;
-    align-content: center;
-    margin: 0px;
-}
-
-#copyright {
-    color: rgb(161, 160, 160);
-    text-align: center;
-    font-family: 'Arapey', serif;
-    font-size: 12px;
-    margin: 0%;
-}
-
-.names {
-    color:  rgb(161, 160, 160);
-    width: 100%;
-    text-align: center;
-    font-family: 'Arapey', serif;
-    font-size: 10px;
-    align-content: center;
-    margin: 0%;
 }
 
 
 /*Tablet*/
 @media (min-width:576px) {
     .botongeneros {
-            font-size: 35px;
-        
+       font-size: 35px;
     }
 
     .trama {
@@ -231,104 +150,62 @@ hr {
     }
 
     .reviews {
-        font-size: 20px;
-        
+        font-size: 20px;   
     }
-
-
+}
 
 /*Desktop*/
 @media (min-width:1024px){
 
-/*Header*/
+    /*Header*/
 
-.header {
-    background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
-    background-size: cover;
-}
+    .header {
+        background-image: url(../Images/Logos/img-portada-fondo-cut.jpg);
+        background-size: cover;
+    }
 
+    a.eye {
+        margin: 1%;
+        margin-left: 1%;
+        width: 50%;
+        margin-bottom: 2.5%;
+    }
 
-a.eye {
-    margin: 1%;
-    margin-left: 1%;
-    width: 50%;
-    margin-bottom: 2.5%;
-    
-}
+    .botongeneros {
+        font-size: 40px;
+        margin: 1%;
+        margin-bottom: 2.5%;
+    }
 
+    /*Main*/
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+        height: 50em;
+    }
 
-.botongeneros {
-    font-size: 40px;
-    margin: 1%;
-    margin-bottom: 2.5%;
-}
+    .titulo {
+        font-size: 80px;
+    }
 
-/*Main*/
-.contenido {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
-    height: 50em;
-}
+    .trama {
+        font-size:25px;
+        margin-bottom: 5%;
+    }
 
-/* .imagen {
-    display: none;
-} */
+    .button{
+        font-size: 20px;
+    }
 
-.titulo {
-    font-size: 80px;
-}
-
-.trama {
-    font-size:25px;
-    margin-bottom: 5%;
-  
-}
-
-.button{
-    font-size: 20px;
-}
-
-.informacion {
-    font-size:25px;
-    margin-top: 5%;
-}
+    .informacion {
+        font-size:25px;
+        margin-top: 5%;
+    }
 
 
-.reviews {
-    font-size: 25px;
-}
+    .reviews {
+        font-size: 25px;
+    }
 
-/* Footer Desktop*/
-
-.footer { 
-    height: 8em;
-}
- 
-.terminos{
-    font-size: 20px;
-    margin-top: 0%;
-}
-
-.miniterminos {
-    padding-right: 1%;
-    padding-left: 1%;
-}
-
-.miniterminosprivacidad { 
-    padding-right: 1%;
-    padding-left: 1%;
-}
-
-
-
-#copyright {
-    font-size: 20px;
-}
-
-.names {
-    font-size:15px;
-}
-
-}
 }

@@ -5,10 +5,6 @@ body {
 }
 
 /* Header */
-body {
-    background-color: black;
-    margin: 0px;
-}
 
 .header {
     background-image: url("../Images/Logos/img-portada-fondo.jpg");
@@ -32,8 +28,8 @@ body {
 
 .fotoeye:hover {
     opacity:50%;
-
 }
+
 .botonhome {
     text-align: right;
     color: #A6A292;
@@ -41,12 +37,10 @@ body {
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 3%;
-  
 }
 
 .botonhome:hover {
     opacity:50%;
-
 }
 
 .title {
@@ -58,8 +52,6 @@ body {
     margin-bottom: 17%;
     margin-top: 3%;
 }
-
-
 
 /*Main*/
 .palabra {
@@ -117,8 +109,6 @@ h3 {
     color: black;
 }
 
-
-
 .textopolaroidaño{
     margin: 0px;
     text-decoration-line: none;
@@ -126,21 +116,18 @@ h3 {
 }
 
 
-
-
-
 /*Tablet*/
 @media (min-width:576px) {
     .botongeneros {
-            font-size: 35px;
-        
+         font-size: 35px;
     }
 
     .favsmovies ,.favsseries{
         grid-template-columns: repeat(3,1fr);
     }
 }
-    
+
+
     /*Desktop*/
     @media (min-width:1024px){
     

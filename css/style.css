@@ -64,7 +64,6 @@ input, select, textarea{
     padding:1%;
 }
 
-
 .eye {
     margin: 3%;
 }
@@ -77,6 +76,7 @@ input, select, textarea{
 .fotoeye:hover {
     opacity: 50%;
 }
+
 .botongeneros {
     text-align: right;
     color: #A6A292;
@@ -115,15 +115,14 @@ input, select, textarea{
      display: block;
      height: 2em;
  }
+
 h3 {
     margin: 5px;
-   
 }
 
 main {
     background-color: black;
 }
-
 
 .palabra {
     color:#D5B6A3;
@@ -144,23 +143,21 @@ main {
     margin: 2%;
     gap: 10px;
 }
+
 section.toprated {
     margin-bottom: 0px;
-
 }
+
 .toprated {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2%;
     gap: 10px;
- 
 }
 
  a.apolaroid:hover {
     opacity: 50%;
     text-decoration: none;
-
-
 }
 
 .polaroid {
@@ -184,8 +181,6 @@ section.toprated {
     width: 100%;
     padding: 2%;
     border-radius: 15px;
-    
-    
 }
 
 a,a:hover {
