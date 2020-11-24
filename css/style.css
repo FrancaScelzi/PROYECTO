@@ -13,29 +13,33 @@ body {
 
 .buscador {
     background-color: black;
-    display: grid;
     justify-content: center;
-    padding: 10px;
     font-family: 'Arapey', serif;    
+}
+
+form {
+    display: flex;
+    flex-direction: row;
 }
 
 .searchfield {
     background-color: black;
     text-decoration-color: blanchedalmond;
     border: 0px;
-    
+    width: 100%;
 }
 
 .searchfield:hover {
     opacity: 50%;
-
 }
 
 .searchbutton {
     background-color: #D5B6A3;
     border: 0px;
-    width: 30px;
+    width: 12px;
     border-radius: 10px;
+    padding: 0%;
+    font-size: 8px;
 }
 
 .searchbutton:hover {
@@ -55,16 +59,19 @@ input, select, textarea{
 
 .portada {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding:1%;
 }
+
+
 .eye {
     margin: 3%;
 }
 
 .fotoeye {
-    width: 34%;
+    width: 60%;
+    margin-bottom: 5%;
 }
 
 .fotoeye:hover {
@@ -73,13 +80,28 @@ input, select, textarea{
 .botongeneros {
     text-align: right;
     color: #A6A292;
-    font-size: 18px;
+    font-size: 13px;
     text-decoration: none;
     font-family: 'Arapey', serif;
     margin: 3%;
 }
 
 .botongeneros:hover {
+    text-decoration-line: none;
+    color:  #A6A292 ;
+    opacity: 50%;
+}
+
+.botonfavoritos{
+    text-align: right;
+    color: #A6A292;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: 'Arapey', serif;
+    margin: 3%;
+}
+
+.botonfavoritos:hover {
     text-decoration-line: none;
     color:  #A6A292 ;
     opacity: 50%;
@@ -201,12 +223,19 @@ a,a:hover {
 /* Tablet */
 @media (min-width:576px) {
     .botongeneros {
-        font-size: 35px;
+        font-size: 30px;
     }   
-.searchfield {
-    font-size: 30px;
-}
-   
+    .botonfavoritos{
+        font-size: 30px;
+    }
+    .searchfield {
+        font-size: 30px;
+    }
+    .searchbutton{
+        font-size: 12px;
+        width: 15%;
+    }
+
     .peliculaspopulares {
         grid-template-columns: repeat(3,1fr);
     }
@@ -234,7 +263,10 @@ a,a:hover {
     
     .botongeneros {
         font-size: 40px;
-        margin: 1%;
+    }
+
+    .botonfavoritos{
+        font-size: 40px;
     }
     
     .title {

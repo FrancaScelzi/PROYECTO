@@ -39,14 +39,11 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
             <div>
                 <h3 class="titulo">${respuesta.title}</h3>
                 <p class="trama"> ${respuesta.overview}</p>
-                <button class="button"> 
-                <img src="./Images/Logos/img-favorite.png" alt="fav">    
-                </button>
+                <button class="button">Agregar a favoritos</button>
                 <ul class="informacion"> 
                     <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
                     <li><strong>Género</strong>:<a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li>
                     <li class="reviews"><strong>Reviews</strong>: </li>
-                    <li></li>
                  </ul>
             </div>
             

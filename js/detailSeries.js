@@ -36,9 +36,8 @@ fetch (url)
                 <div>
                     <h3 class="titulo">${respuesta.name}</h3>
                     <p class="trama"> ${respuesta.overview}</p>
-                    <button class="button"> 
-                        <img src="./Images/Logos/img-favorite.png" alt="fav">    
-                    </button>
+                   
+                    <button class="button">Agregar a favoritos</button>   
        
                     <ul class="informacion"> 
       
