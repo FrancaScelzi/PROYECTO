@@ -24,12 +24,10 @@ let url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
 
 let containerDeatil = document.querySelector('main');
 
-fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
+fetch(url)
   .then(datos => datos.json())
   .then(respuesta => {
 
-    
-    
     console.log(respuesta);
     let detail = ''
 
@@ -53,7 +51,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 
 
     containerDeatil.innerHTML = detail
-
+      //Favoritos
     let boton = document.querySelector ('.button')
 
     boton.addEventListener ('click', function () {
@@ -94,12 +92,12 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
         
               
               let content = respuesta.results[0].content;
-              let maxLenght = 400
+              let maxLenght = 385
               console.log (content)
 
              
               
-              if (content.length >1 ) {
+              if (content.length > 384 ) {
                 let reviewPart = content.slice(0,maxLenght);
                 content = reviewPart + '...';
               
