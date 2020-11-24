@@ -95,19 +95,23 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 
         let resultados = respuesta.results;
         
-          respuesta.results.forEach(index => {
               
-              let content = index.content ;
+              let content = respuesta.results[0].content;
+              let maxLenght = 400
+              console.log (content)
+
+             
               
-              if (content.length > 1) {
-                let reviewPart = content.slice(0,30);
+              if (content.length >1 ) {
+                let reviewPart = content.slice(0,maxLenght);
                 content = reviewPart + '...';
-              }
               
-              containerReviews.innerHTML += `${content} `
+              
+              containerReviews.innerHTML += `${content}`
+
             
             
-          });
+              }
         
         
       })
