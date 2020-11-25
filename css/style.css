@@ -8,10 +8,28 @@ body {
     background-color: black;
 }
 
+/* CSS NUEVO HEADER */
+        .navbar-dark .navbar-nav .nav-link{
+            color: #A6A292 !important;
+            font-family: 'Arapey', serif;   
+            font-size: 20px;
+        }
 
-/*Buscador*/
+        .btn-outline-success{
+            color: #A6A292 !important;
+            border-color: #A6A292 !important;
+        }
 
-.buscador {
+        .form-control {
+            background-color: white !important;
+            border: #A6A292 important;
+
+        }
+
+
+/*CSS VIEJO HEADER*/
+
+/* .buscador {
     background-color: black;
     justify-content: center;
     font-family: 'Arapey', serif;    
@@ -50,7 +68,7 @@ input, select, textarea{
     color:#D5B6A3;
 }
 
-/*Header*/
+
 .header {
     background-color: black;
     background-size: 100%;
@@ -105,7 +123,7 @@ input, select, textarea{
     text-decoration-line: none;
     color:  #A6A292 ;
     opacity: 50%;
-}
+} */
 
 #carouselExampleIndicators {
     margin-bottom: 2px;

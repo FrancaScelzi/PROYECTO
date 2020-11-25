@@ -78,7 +78,7 @@ h3 {
     border-radius: 15px;
 }
 
-.polaroid:hover {
+.imagen:hover {
     opacity: 50%;
 }
 
@@ -97,11 +97,11 @@ h3 {
     text-decoration-line: none ;
 }
 
-.textopolaroid:hover {
+/* .textopolaroid:hover {
     text-decoration:none;
     text-decoration-line: none;
     opacity: 50%;
-}
+} */
 
 .textopolaroidtitulo{
     margin: 0px;
@@ -129,7 +129,10 @@ button {
     margin-top: 5px;
     display: inline-block;
     justify-content: end;
+}
 
+button:hover {
+    opacity: 50%;
 }
 
 /*Tablet*/

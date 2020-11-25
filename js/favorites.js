@@ -33,18 +33,17 @@ storageJsMovie.forEach( idMovie => {
 
     console.log (respuesta)
 
-    let movie = `<a href="detailFilms.html?id=${respuesta.id}">
+    let movie = `
     <article class= "polaroid" >
         
-        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${respuesta.poster_path}"> 
+    <a href="detailFilms.html?id=${respuesta.id}"><img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${respuesta.poster_path}"></a>
         
         <div class = "textopolaroid"> 
             <p class= "textopolaroidtitulo">${respuesta.title}</p> 
             <p class = "textopolaroidaño"> ${respuesta.release_date}</p>
             <button class="button">Sacar de favoritos</button>
         </div>
-    </article>
-</a>`
+    </article>`
          console.log (respuesta)
 
     containerFavsMovies.innerHTML += movie;
@@ -63,10 +62,10 @@ storageJsSerie.forEach( idSerie => {
 
     console.log (respuesta)
 
-    let serie = `<a href="detailFilms.html?id=${respuesta.id}">
+    let serie = `
     <article class= "polaroid" >
         
-        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${respuesta.poster_path}"> 
+    <a href="detailFilms.html?id=${respuesta.id}"><img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${respuesta.poster_path}"></a>
         
         <div class = "textopolaroid"> 
             <p class= "textopolaroidtitulo">${respuesta.name}</p> 
@@ -74,8 +73,7 @@ storageJsSerie.forEach( idSerie => {
             <button class="button">Sacar de favoritos</button>
             
         </div>
-    </article>
-</a>`
+    </article>`
          console.log (respuesta)
 
     containerFavsSeries.innerHTML += serie;

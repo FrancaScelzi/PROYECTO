@@ -21,12 +21,37 @@
 <body>
 
   
-    <!-- Portada -->
-    <header class="header">
-    
+<!-- NUEVO HEADER -->
 
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+  <a class="navbar-brand" href="#">
+    <img src="Images/Logos/img-logo.png" width="55" height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="generos.html">GÉNEROS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="favorites.html">FAVORITOS</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="searchResults.html" method="get">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="searchData" value="">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- VIEJO HEADER -->
+<!-- <header class="header">
     <div class="portada"> 
-       <!-- Logo y link a index -->
       
        <a class="eye" href="index.html">
          <img class="fotoeye" src="images/Logos/img-logo.png" alt="Logo"> 
@@ -43,9 +68,7 @@
         <a href="">AVANZADO</a>
         
       </div> 
-
- 
- </header> 
+ </header>  -->
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
