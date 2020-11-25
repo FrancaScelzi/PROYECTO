@@ -18,11 +18,13 @@ body {
         .btn-outline-success{
             color: #A6A292 !important;
             border-color: #A6A292 !important;
+            font-family: 'Arapey', serif; 
         }
 
         .form-control {
             background-color: white !important;
             border: #A6A292 important;
+            font-family: 'Arapey', serif; 
 
         }
 

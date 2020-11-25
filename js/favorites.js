@@ -82,7 +82,7 @@ storageJsSerie.forEach( idSerie => {
 // .catch (error => console.log (error));
 })
 
-// let boton = document.querySelector('.button')
+//Sacar de favoritos
 
 // boton.addEventListener ('click', function () {
 //     storageJsMovie = storageJsMovie.filter (function (movie){
