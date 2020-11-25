@@ -70,25 +70,34 @@ storageJsSerie.forEach( idSerie => {
         <div class = "textopolaroid"> 
             <p class= "textopolaroidtitulo">${respuesta.name}</p> 
             <p class = "textopolaroidaño"> ${respuesta.first_air_date}</p>
-            <button class="button">Sacar de favoritos</button>
             
-        </div>
-    </article>`
-         console.log (respuesta)
+            </div>
+            </article>`
+            console.log (respuesta)
+            
+            containerFavsSeries.innerHTML += serie;
+        })
+        .catch (error => console.log (error));
+    })
+    
+    // <button class="button">Sacar de favoritos</button> Lo saque del article
 
-    containerFavsSeries.innerHTML += serie;
-})
 
-// .catch (error => console.log (error));
-})
+// function sacarDeFavoritos(){
 
-//Sacar de favoritos
+//     let storage = localStorage.getItem('MovieFavs')
+//     let storageJs = JSON.parse(storage)
 
-// boton.addEventListener ('click', function () {
-//     storageJsMovie = storageJsMovie.filter (function (movie){
-//         return movie
-//     })
-// })
+//     if(!storageJs.includes(id)) {
+//         storageJs.push(id)
+//     } else {
+//         storageJs = storageJs.filter(function (movie){
+//             return movie != id 
+//         })
+//     }
 
+//     localStorage.setItem ('MovieFavs', JSON.stringify(storageJs))  
+
+// }
 
 
