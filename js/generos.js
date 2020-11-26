@@ -27,3 +27,7 @@ fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=50a53e8e9d1beeefe2
 
     containerGeneros.innerHTML= generos
 })
+
+.catch(function(error){
+    console.log('El error fué: ' + error);
+})

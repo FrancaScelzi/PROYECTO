@@ -29,8 +29,12 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
     });
 
     containerPeliculasPopulares.innerHTML= movies
+
 })
 
+.catch(function(error){
+    console.log('El error fué: ' + error);
+})
 
 // Series populares
 
@@ -60,6 +64,11 @@ fetch (`https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1d
     });
 
     containerSeriesPopulares.innerHTML= movies
+    
+})
+
+.catch(function(error){
+    console.log('El error fué: ' + error);
 })
 
 // Top rated
@@ -90,4 +99,10 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=50a53e8e9d1beeefe24
     });
 
     containerTopRated.innerHTML= movies
+    
 })
+
+.catch(function(error){
+    console.log('El error fué: ' + error);
+})
+
