@@ -42,27 +42,32 @@
         <a class="nav-link" href="favorites.html">FAVORITOS</a>
       </li>
     </ul>
+
+
     <form class="form-inline my-2 my-lg-0" action="searchResults.html" method="get">
      <div>
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="searchData" value="">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </div>
-    <div>
-      <label for="all">ALL</label>
+  
+    <div class="buscadorAvanzado">
+      <!-- Radio Button -->
       <input type="radio" name="mediaType" id="all" value="all" checked>
-      
-      <label for="movies">MOVIES</label>
-      <input type="radio" name="mediaType" id="movies" value="movies">
-
-      <label for="tv">SERIES</label>
+      <label class="filtros" for="all">ALL</label>
+      <!-- Radio Button -->
+      <input type="radio" name="mediaType" id="movie" value="movie">
+      <label class="filtros" for="movies">MOVIES</label>
+      <!-- Radio Button -->
       <input type="radio" name="mediaType" id="tv" value="tv">
-
-      <label for="person">PERSON</label>
-      <input type="radio" name="mediaType" id="person" value="person">
+      <label class="filtros" for="tv">SERIES</label>
+      <!-- Radio Button -->
+      <input class="botonFiltro" type="radio" name="mediaType" id="person" value="person">
+      <label class="filtros" for="person">PERSON</label>
     </div>
-    </form>
   </div>
+</form>
 </nav>
+
+
 
 <!-- VIEJO HEADER -->
 <!-- <header class="header">

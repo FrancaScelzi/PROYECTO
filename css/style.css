@@ -25,7 +25,26 @@ body {
             background-color: white !important;
             border: #A6A292 important;
             font-family: 'Arapey', serif; 
+            
+        }
+        
+        .buscadorAvanzado {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
 
+        .botonFiltro {
+            color: black;
+            size: 10px;
+            
+        }
+        .filtros {
+            color: #A6A292;
+            font-family: 'Arapey', serif;
+            
         }
 
 

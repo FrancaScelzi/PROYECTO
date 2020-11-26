@@ -41,7 +41,6 @@ storageJsMovie.forEach( idMovie => {
         <div class = "textopolaroid"> 
             <p class= "textopolaroidtitulo">${respuesta.title}</p> 
             <p class = "textopolaroidaño"> ${respuesta.release_date}</p>
-            <button class="button">Sacar de favoritos</button>
         </div>
     </article>`
          console.log (respuesta)

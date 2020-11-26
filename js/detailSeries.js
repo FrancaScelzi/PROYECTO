@@ -37,7 +37,7 @@ fetch (url)
                     <h3 class="titulo">${respuesta.name}</h3>
                     <p class="trama"> ${respuesta.overview}</p>
                    
-                    <button class="button">Agregar a favoritos</button>   
+                    <button class="button">★</button>   
        
                     <ul class="informacion"> 
       
@@ -64,12 +64,14 @@ fetch (url)
 
         if (!storageJs.includes(id)){
           storageJs.push(id)
+          boton.innerHTML = "Sacar de favoritos"
         }
 
         else {
           storageJs = storageJs.filter (function (serie) {
             return serie != id
           })
+          boton.innerHTML="Agregar a favoritos"
         }
 
         localStorage.setItem ('SerieFavs', JSON.stringify(storageJs))

@@ -37,7 +37,7 @@ fetch(url)
             <div>
                 <h3 class="titulo">${respuesta.title}</h3>
                 <p class="trama"> ${respuesta.overview}</p>
-                <button class="button">Agregar a favoritos</button>
+                <button class="button">★</button>
                 <ul class="informacion"> 
                     <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
                     <li><strong>Género</strong>:<a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li>
@@ -62,22 +62,19 @@ fetch(url)
      
        if(!storageJs.includes(id)) {
        storageJs.push(id)
-     
+        boton.innerHTML = "Sacar de favoritos"
        }
        
        else{
          storageJs = storageJs.filter(function (movie){
-           return movie != id 
-
+           return movie != id ;
            
-         })
+          })
+         boton.innerHTML="Agregar a favoritos"
        }
 
        localStorage.setItem ('MovieFavs', JSON.stringify(storageJs))  
     }) 
-
-
-
 
     // Reviews
 
@@ -90,27 +87,21 @@ fetch(url)
         let containerReviews = document.querySelector ('.reviews')
 
         let resultados = respuesta.results;
-        
-              
+
               let content = respuesta.results[0].content;
               let maxLenght = 385
               console.log (content)
 
-             
               
-              if (content.length > 384 ) {
-                let reviewPart = content.slice(0,maxLenght);
-                content = reviewPart + '...';
-              
-              
-              containerReviews.innerHTML += `${content}`
 
-            
-            
-              }
-        
-        
+               if (content.length > 384 ) {
+                 let reviewPart = content.slice(0,maxLenght);
+                 content = reviewPart + '...';
+                 
+                 
+                 containerReviews.innerHTML += `${content}`
+                }
+
       })
-
 
   })
