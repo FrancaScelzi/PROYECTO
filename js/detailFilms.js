@@ -37,7 +37,7 @@ fetch(url)
                 <button class="button">★</button>
                 <ul class="informacion"> 
                     <li><strong>Promedio de votos</strong>: ${respuesta.vote_average} </li>
-                    <li><strong>Género</strong>:<a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li>
+                    <li><strong>Género</strong>:<a href="detailGeneros.html?id=${respuesta.genres[0]?.id}"> ${respuesta.genres[0]?.name} </a></li>
                     <li class="reviews"><strong>Reviews</strong>: </li>
                  </ul>
             </div> 
@@ -75,19 +75,28 @@ fetch(url)
       .then(respuesta => {
         console.log(respuesta)
 
+
         let containerReviews = document.querySelector ('.reviews')
 
-              let content = respuesta.results[0].content;
-              let maxLenght = 384
-              console.log (content)
+        
+        if (respuesta.results.length > 0){
 
-               if (content.length > 384 ) {
-                 let reviewPart = content.slice(0,maxLenght);
-                 content = reviewPart + '...';
-                 
-                 
-                 containerReviews.innerHTML += `${content}`
+          let content = respuesta.results[0].content;
+          let maxLenght = 384
+          
+                if (content.length > 384 ) {
+                  let reviewPart = content.slice(0,maxLenght);
+                  content = reviewPart + '...' 
+                  containerReviews.innerHTML += `${content}`
+                } else {
+                  containerReviews.innerHTML += `${content}`
                 }
+
+          } else {
+            containerReviews.innerHTML += "La película no tiene reviews"
+          }
+
+      
 
       })
 

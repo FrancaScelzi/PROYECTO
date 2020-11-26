@@ -11,10 +11,8 @@ fetch ('https://api.themoviedb.org/3/movie/popular?api_key=50a53e8e9d1beeefe2442
     console.log (respuesta);
     let movies = ''
 
-    respuesta.results.forEach ((pelicula, index) => {
+    respuesta.results.forEach (function(pelicula, index) {
         if (index < 6){
-
-    
         movies += 
         `<a class="apolaroid" href="detailFilms.html?id=${pelicula.id}"> 
             <article class= "polaroid" > 
@@ -46,7 +44,7 @@ fetch (`https://api.themoviedb.org/3/tv/popular?api_key=50a53e8e9d1beeefe2442f1d
     console.log (respuesta);
     let movies = ''
 
-    respuesta.results.forEach ((serie, index) => {
+    respuesta.results.forEach (function(serie, index) {
         if (index < 6){
 
     
@@ -81,7 +79,7 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=50a53e8e9d1beeefe24
     console.log (respuesta);
     let movies = ''
 
-    respuesta.results.forEach ((pelicula, index) => {
+    respuesta.results.forEach (function (pelicula, index) {
         if (index < 6){
 
     
