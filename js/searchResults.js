@@ -14,14 +14,21 @@ let url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=
 
 let containerResults = document.querySelector ('.resultados');
 let searchTitle = document.querySelector ('.searchTitle')
+window.addEventListener ("load", function(){
+  let spinner = document.querySelector ('.loader')
+
+  spinner.style.display= "none"
+}) 
+
+
+
+
 
 fetch (url)
 .then (datos=>datos.json() )
 .then (respuesta => {
 
-  let spinner = document.querySelector ('.loader')
 
-  spinner.style.display= "none"
     console.log (respuesta);
     let results = ''
 
