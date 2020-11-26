@@ -1,6 +1,6 @@
 // JS Search Results
 
-let queryString = location.search;
+let queryString = window.location.search;
 
 let queryObject = new URLSearchParams (queryString);
 console.log (queryObject);
