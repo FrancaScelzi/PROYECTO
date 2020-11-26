@@ -48,8 +48,6 @@ fetch (url)
                 </div>
         
         </div>`
-      
-      
 
       containerDeatil.innerHTML= detail
 

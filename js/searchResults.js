@@ -26,78 +26,8 @@ let spinner = document.querySelector ('.loader')
 
 // Buscador Avanzado
 
-// Filtro: TODOS [MOVIES + SERIES + PERSONAS]
-if (mediaType == "all") {
-fetch (url)
-.then (datos=>datos.json() )
-.then (respuesta => {
-
-    console.log (respuesta);
-    let results = ''
-
-    respuesta.results.forEach ((multi, index) => {
-      // Series
-      if (multi.media_type == "tv"){
-        results += 
-        ` <section>
-        <a href="detailSeries.html?id=${multi.id}"> 
-        <article class= "polaroid" > 
-        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
-        <div class = "textopolaroid"> 
-        <p class= "textopolaroidtitulo"> ${multi.name}</p> 
-        <p class = "textopolaroidaño"> ${multi.first_air_date} </p>
-        </div>
-        </article>
-        </a>
-       </section>` 
-       
-       containerResults.innerHTML= results
-      
-      }
-
-      // Películas
-      else if (multi.media_type == "movie"){
-        results +=
-        ` <section>
-        <a class="apolaroid" href="detailFilms.html?id=${multi.id}"> 
-        <article class= "polaroid" > 
-        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
-        <div class = "textopolaroid"> 
-                   <p class= "textopolaroidtitulo"> ${multi.title}</p> 
-                   <p class = "textopolaroidaño"> ${multi.release_date} </p>
-                   </div>
-            </article>
-            </a>
-            </section>` 
-
-            containerResults.innerHTML= results
-          }
-        
-        // Personas 
-        else if (multi.media_type == "person"){
-            
-            results += `<section>
-        <a class="apolaroid" href=""> 
-        <article class= "polaroid" > 
-        <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.profile_path}"> 
-        <div class = "textopolaroid"> 
-                   <p class= "textopolaroidtitulo"> ${multi.name}</p> 
-                   <p class = "textopolaroidaño"> ${multi.popularity} </p>
-                   </div>
-            </article>
-            </a>
-            </section>`
-            
-            containerResults.innerHTML = results
-          }
-
-          searchTitle.innerHTML = search
-        })
-      })
-    }
-
     // Filtro: SOLO PELÍCULAS
-      else if (mediaType == "movie"){
+      if (mediaType == "movie"){
 
         fetch (url)
         .then (datos=>datos.json() )
@@ -131,7 +61,7 @@ fetch (url)
       }
         
       // Filtro: SOLO SERIES
-      if (mediaType == "tv"){
+      else if (mediaType == "tv"){
 
         fetch (url)
         .then (datos=>datos.json() )
@@ -195,6 +125,76 @@ fetch (url)
       })
             searchTitle.innerHTML = search
       })
+      }
+
+      // Filtro: TODOS [MOVIES + SERIES + PERSONAS]
+      if (mediaType == "all") {
+  fetch (url)
+  .then (datos=>datos.json() )
+  .then (respuesta => {
+  
+      console.log (respuesta);
+      let results = ''
+  
+      respuesta.results.forEach ((multi, index) => {
+        // Series
+        if (multi.media_type == "tv"){
+          results += 
+          ` <section>
+          <a href="detailSeries.html?id=${multi.id}"> 
+          <article class= "polaroid" > 
+          <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
+          <div class = "textopolaroid"> 
+          <p class= "textopolaroidtitulo"> ${multi.name}</p> 
+          <p class = "textopolaroidaño"> ${multi.first_air_date} </p>
+          </div>
+          </article>
+          </a>
+         </section>` 
+         
+         containerResults.innerHTML= results
+        
+        }
+  
+        // Películas
+        else if (multi.media_type == "movie"){
+          results +=
+          ` <section>
+          <a class="apolaroid" href="detailFilms.html?id=${multi.id}"> 
+          <article class= "polaroid" > 
+          <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.poster_path}"> 
+          <div class = "textopolaroid"> 
+                     <p class= "textopolaroidtitulo"> ${multi.title}</p> 
+                     <p class = "textopolaroidaño"> ${multi.release_date} </p>
+                     </div>
+              </article>
+              </a>
+              </section>` 
+  
+              containerResults.innerHTML= results
+            }
+          
+          // Personas 
+          else if (multi.media_type == "person"){
+              
+              results += `<section>
+          <a class="apolaroid" href=""> 
+          <article class= "polaroid" > 
+          <img class = "imagen" src= "https://image.tmdb.org/t/p/w500/${multi.profile_path}"> 
+          <div class = "textopolaroid"> 
+                     <p class= "textopolaroidtitulo"> ${multi.name}</p> 
+                     <p class = "textopolaroidaño"> ${multi.popularity} </p>
+                     </div>
+              </article>
+              </a>
+              </section>`
+              
+              containerResults.innerHTML = results
+            }
+  
+            searchTitle.innerHTML = search
+          })
+        })
       }
 
 

@@ -18,10 +18,7 @@ fetch (genres)
 .then (respuesta => {
   console.log(respuesta);
 
-  
-
   let genreTitle = document.querySelector('.titlegenero');
-  
 
   for (let i=0; i<respuesta.genres.length; i++){
     console.log(id);
@@ -42,7 +39,6 @@ fetch (contenidoMovies)
 .then (respuesta => {
   console.log (respuesta);
 let movies = ""
-
 
 respuesta.results.forEach((pelicula,index) =>{
   if(index<10){
@@ -65,7 +61,6 @@ respuesta.results.forEach((pelicula,index) =>{
 containerMovies.innerHTML = movies
 })
  
-
 let contenidoTv = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false`
 
 let containerTv = document.querySelector ('.contenidotv');
@@ -76,7 +71,6 @@ fetch (contenidoTv)
   console.log (respuesta);
 let series = ""
  
-
 respuesta.results.forEach((serie,index) =>{
   if(index<10){
     series +=

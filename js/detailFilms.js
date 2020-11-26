@@ -1,5 +1,4 @@
 // JS Detail
-
 let queryString = location.search;
 
 let queryObject = new URLSearchParams(queryString);
