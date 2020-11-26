@@ -16,8 +16,6 @@ if (storage == null) {
   localStorage.setItem ('MovieFavs', '[]')
 }
 
-
-
 let apiKey = "50a53e8e9d1beeefe2442f1dbc53288d";
 
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`
@@ -43,12 +41,8 @@ fetch(url)
                     <li><strong>Género</strong>:<a href="detailGeneros.html?id=${respuesta.genres[0].id}"> ${respuesta.genres[0].name} </a></li>
                     <li class="reviews"><strong>Reviews</strong>: </li>
                  </ul>
-            </div>
-            
-           
+            </div> 
         </div>`
-
-
 
     containerDeatil.innerHTML = detail
 
@@ -59,7 +53,6 @@ fetch(url)
       let storage = localStorage.getItem('MovieFavs')
       let storageJs = JSON.parse(storage)
 
-     
        if(!storageJs.includes(id)) {
        storageJs.push(id)
         boton.innerHTML = "Sacar de favoritos"
@@ -83,16 +76,11 @@ fetch(url)
       .then(respuesta => {
         console.log(respuesta)
 
-
         let containerReviews = document.querySelector ('.reviews')
 
-        let resultados = respuesta.results;
-
               let content = respuesta.results[0].content;
-              let maxLenght = 385
+              let maxLenght = 384
               console.log (content)
-
-              
 
                if (content.length > 384 ) {
                  let reviewPart = content.slice(0,maxLenght);
