@@ -58,6 +58,9 @@ let spinner = document.querySelector ('.loader')
       })
             searchTitle.innerHTML = search
       })
+      .catch(function(error){
+        console.log('El error fué: ' + error);
+    })
       }
         
       // Filtro: SOLO SERIES
@@ -92,6 +95,11 @@ let spinner = document.querySelector ('.loader')
       })
             searchTitle.innerHTML = search
       })
+
+      .catch(function(error){
+        console.log('El error fué: ' + error);
+    })
+
       }
 
       // Filtro: SOLO PERSONAS
@@ -125,6 +133,10 @@ let spinner = document.querySelector ('.loader')
       })
             searchTitle.innerHTML = search
       })
+      .catch(function(error){
+        console.log('El error fué: ' + error);
+    })
+
       }
 
       // Filtro: TODOS [MOVIES + SERIES + PERSONAS]
@@ -195,6 +207,9 @@ let spinner = document.querySelector ('.loader')
             searchTitle.innerHTML = search
           })
         })
+         .catch(function(error){
+          console.log('El error fué: ' + error);
+      })
       }
 
 
