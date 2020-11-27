@@ -78,6 +78,9 @@ fetch (url)
 
 
     })
-
+    
+    .catch(function(error){
+      console.log('El error fué: ' + error);
+  })
 
   

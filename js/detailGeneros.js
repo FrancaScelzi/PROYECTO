@@ -30,6 +30,10 @@ fetch (genres)
   }
 })
 
+.catch(function(error){
+  console.log('El error fué: ' + error);
+})
+
 let contenidoMovies = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false`
 
 let containerMovies = document.querySelector ('.contenidomovies');
@@ -60,7 +64,11 @@ respuesta.results.forEach((pelicula,index) =>{
 })
 containerMovies.innerHTML = movies
 })
- 
+
+.catch(function(error){
+  console.log('El error fué: ' + error);
+})
+
 let contenidoTv = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false`
 
 let containerTv = document.querySelector ('.contenidotv');
@@ -90,4 +98,8 @@ respuesta.results.forEach((serie,index) =>{
   }
 })
 containerTv.innerHTML = series
+})
+
+.catch(function(error){
+  console.log('El error fué: ' + error);
 })

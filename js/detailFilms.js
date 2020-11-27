@@ -68,6 +68,7 @@ fetch(url)
        localStorage.setItem ('MovieFavs', JSON.stringify(storageJs))  
     }) 
 
+    
     // Reviews
 
     fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}`)
@@ -101,3 +102,7 @@ fetch(url)
       })
 
   })
+
+  .catch(function(error){
+    console.log('El error fué: ' + error);
+})

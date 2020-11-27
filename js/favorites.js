@@ -48,7 +48,10 @@ storageJsMovie.forEach( idMovie => {
     containerFavsMovies.innerHTML += movie;
 })
 
-// .catch (error => console.log (error));
+.catch(function(error){
+    console.log('El error fué: ' + error);
+})
+
 })
 
 storageJsSerie.forEach( idSerie => {
@@ -79,24 +82,4 @@ storageJsSerie.forEach( idSerie => {
         .catch (error => console.log (error));
     })
     
-    // <button class="button">Sacar de favoritos</button> Lo saque del article
-
-
-// function sacarDeFavoritos(){
-
-//     let storage = localStorage.getItem('MovieFavs')
-//     let storageJs = JSON.parse(storage)
-
-//     if(!storageJs.includes(id)) {
-//         storageJs.push(id)
-//     } else {
-//         storageJs = storageJs.filter(function (movie){
-//             return movie != id 
-//         })
-//     }
-
-//     localStorage.setItem ('MovieFavs', JSON.stringify(storageJs))  
-
-// }
-
 
